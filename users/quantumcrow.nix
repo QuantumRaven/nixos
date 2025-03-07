@@ -83,6 +83,7 @@
       xh # Friendly and fast tool for sending HTTP requests
       xournalpp
       xwayland # X server for interfacing X11 apps with the Wayland protocol
+      yakuake # Yakuake is a drop-down terminal emulator based on KDE Konsole technology.
       zeal # A simple offline API documentation browser
       zellij # A terminal workspace with batteries included
       zettlr # Joplin alternative
