@@ -79,6 +79,7 @@
       wget2 # Successor of GNU Wget, a file and recursive website downloader
       wl-clipboard-rs # Command-line copy/paste utilities for Wayland, written in Rust
       wofi # A launcher/menu program for wlroots based wayland compositors such as sway
+      wezterm
       xdg-desktop-portal-wlr # xdg-desktop-portal backend for wlroots
       xh # Friendly and fast tool for sending HTTP requests
       xournalpp
