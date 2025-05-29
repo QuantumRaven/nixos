@@ -41,6 +41,7 @@
    pciutils
    pipewire
    pavucontrol
+   ripgrep
    sd
    slurp
    sshpass
