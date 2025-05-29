@@ -3,8 +3,8 @@
 {
 
   programs.fish = {
-    
-    enable = true;
+
+      enable = true;
 
   };
 
