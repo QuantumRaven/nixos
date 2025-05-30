@@ -30,6 +30,7 @@
    fzf
    ghostty
    gimp
+   gnucash
    grim
    keepassxc
    librewolf
