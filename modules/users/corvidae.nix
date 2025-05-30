@@ -47,6 +47,7 @@
    sd
    slurp
    sshpass
+   starship
    unzip
    waybar
    wf-recorder
