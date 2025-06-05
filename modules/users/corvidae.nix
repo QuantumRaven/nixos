@@ -36,6 +36,7 @@
    librewolf
    lsd
    lshw
+   mako
    mpv
    neovim
    openssl
