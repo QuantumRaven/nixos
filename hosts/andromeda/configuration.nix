@@ -22,6 +22,8 @@
       modules/git.nix
       # Impure Pkgs
       modules/impure_pkgs.nix
+      # Neovim
+      modules/neovim.nix
       # Networking
       modules/networking.nix
       # Nix Flakes
