@@ -49,6 +49,7 @@
    slurp
    sshpass
    starship
+   texliveFull
    unzip
    waybar
    wf-recorder
