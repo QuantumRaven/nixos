@@ -14,6 +14,7 @@
    shell = pkgs.fish;
    packages = with pkgs; [
    asciinema
+   ansible
    ansible-lint
    bat
    brave
