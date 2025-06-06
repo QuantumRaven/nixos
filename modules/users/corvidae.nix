@@ -39,7 +39,6 @@
    lshw
    mako
    mpv
-   neovim
    openssl
    pandoc
    pciutils
