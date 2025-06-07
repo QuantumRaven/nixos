@@ -53,6 +53,7 @@
    unzip
    waybar
    wf-recorder
+   wget2
    wl-clipboard-rs
    wofi
    xdg-desktop-portal-wlr
