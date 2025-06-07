@@ -12,6 +12,8 @@
       modules/audio.nix
       # Bootloader
       modules/bootloader.nix
+      # Disable Nano
+      modules/disable_nano.nix
       # Fish
       modules/fish.nix
       # Firewall
