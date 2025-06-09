@@ -51,6 +51,7 @@
    sshpass
    starship
    texliveFull
+   texmaker
    tree
    unzip
    waybar
