@@ -50,6 +50,7 @@
    sshpass
    starship
    texliveFull
+   tree
    unzip
    waybar
    wf-recorder
