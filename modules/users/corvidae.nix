@@ -40,6 +40,7 @@
    lshw
    mako
    mpv
+   obs-studio
    openssl
    pandoc
    pciutils
