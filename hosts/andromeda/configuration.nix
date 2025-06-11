@@ -32,6 +32,8 @@
       modules/nix_flakes.nix
       # OpenSSH
       modules/openssh.nix
+      # Podman
+      modules/podman.nix
       # System Packages
       modules/sys_pkgs.nix
       # Tiling Window Manager
