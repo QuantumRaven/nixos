@@ -46,6 +46,7 @@
    pciutils
    pipewire
    pavucontrol
+   podman-compose
    ripgrep
    sd
    slurp
