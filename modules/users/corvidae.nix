@@ -26,9 +26,7 @@
    fd
    ffmpeg
    fish
-   fira-code-nerdfont
    firefox
-   font-awesome
    fzf
    ghostty
    gimp
