@@ -38,6 +38,7 @@
    lshw
    mako
    mpv
+   notesnook
    obs-studio
    openssl
    pandoc
@@ -64,6 +65,7 @@
    xh
    xwayland
    zellij
+   zola
    ];
 
    };
