@@ -54,7 +54,6 @@
    texmaker
    tree
    unzip
-   waybar
    wf-recorder
    wget2
    wl-clipboard-rs
