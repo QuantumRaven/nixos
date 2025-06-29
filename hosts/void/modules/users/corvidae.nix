@@ -16,7 +16,6 @@
    asciinema
    ansible
    ansible-lint
-   ags
    bat
    brave
    btop
