@@ -60,6 +60,7 @@
    wl-clipboard-rs
    wofi
    xdg-desktop-portal
+   xdg-desktop-portal-gtk
    xdg-desktop-portal-wlr
    xh
    xwayland
