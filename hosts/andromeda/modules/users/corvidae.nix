@@ -32,7 +32,6 @@
    gimp
    gnucash
    grim
-   hyprland
    keepassxc
    librewolf
    lsd
@@ -47,6 +46,7 @@
    pavucontrol
    podman-compose
    ripgrep
+   river
    sd
    slurp
    sshpass
