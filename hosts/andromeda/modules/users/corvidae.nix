@@ -13,6 +13,7 @@
    extraGroups = [ "networkmanager" "wheel" ];
    shell = pkgs.fish;
    packages = with pkgs; [
+   alacritty
    asciinema
    ansible
    ansible-lint
@@ -46,6 +47,7 @@
    pavucontrol
    podman-compose
    ripgrep
+   river
    sd
    slurp
    sshpass
