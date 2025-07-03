@@ -32,6 +32,7 @@
    gimp
    gnucash
    grim
+   hyprland
    keepassxc
    librewolf
    lsd
