@@ -54,6 +54,7 @@
    texmaker
    tree
    unzip
+   uv
    waybar
    wf-recorder
    wget2
