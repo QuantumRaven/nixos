@@ -47,7 +47,6 @@
    pavucontrol
    podman-compose
    ripgrep
-   river
    sd
    slurp
    sshpass
@@ -57,12 +56,12 @@
    tree
    unzip
    uv
-   waybar
    wf-recorder
    wget2
    wl-clipboard-rs
    wofi
    xdg-desktop-portal
+   xdg-desktop-portal-gtk
    xdg-desktop-portal-wlr
    xh
    xwayland
