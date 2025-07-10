@@ -13,6 +13,7 @@
    extraGroups = [ "networkmanager" "wheel" ];
    shell = pkgs.fish;
    packages = with pkgs; [
+   alacritty
    asciinema
    ansible
    ansible-lint
@@ -38,7 +39,6 @@
    lshw
    mako
    mpv
-   notesnook
    obs-studio
    openssl
    pandoc
@@ -55,6 +55,7 @@
    texmaker
    tree
    unzip
+   uv
    wf-recorder
    wget2
    wl-clipboard-rs
