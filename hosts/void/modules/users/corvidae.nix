@@ -21,6 +21,7 @@
    brave
    btop
    discord
+   dnsutils
    du-dust
    duf
    fastfetch
@@ -29,7 +30,6 @@
    fish
    firefox
    fzf
-   ghostty
    gimp
    gnucash
    grim
@@ -53,7 +53,6 @@
    starship
    texliveFull
    texmaker
-   tree
    unzip
    uv
    wf-recorder
