@@ -33,7 +33,7 @@
    gimp
    gnucash
    grim
-   joplin
+   joplin-desktop
    keepassxc
    librewolf
    lsd
