@@ -43,6 +43,7 @@
    mpv
    nfs-utils
    obs-studio
+   kdePackages.okular
    openssl
    pandoc
    pciutils
