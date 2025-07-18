@@ -56,6 +56,7 @@
    starship
    texliveFull
    texmaker
+   tldr
    unzip
    uv
    wf-recorder
