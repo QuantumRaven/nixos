@@ -22,6 +22,7 @@
    btop
    discord
    dnsutils
+   doggo   
    du-dust
    duf
    fastfetch
