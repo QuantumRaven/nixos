@@ -41,6 +41,7 @@
    lshw
    mako
    mpv
+   nfs-utils
    obs-studio
    openssl
    pandoc
