@@ -26,6 +26,8 @@
       modules/neovim.nix
       # Networking
       modules/networking.nix
+      # SSH
+      modules/openssh.nix
       # Podman
       modules/podman.nix
       # System Packages
