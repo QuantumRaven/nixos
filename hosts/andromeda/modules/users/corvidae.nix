@@ -29,7 +29,6 @@
    fish
    firefox
    fzf
-   ghostty
    gimp
    gnucash
    grim
@@ -39,6 +38,7 @@
    lshw
    mako
    mpv
+   nfs-utils
    obs-studio
    openssl
    pandoc
