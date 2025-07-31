@@ -47,6 +47,7 @@
    pipewire
    pavucontrol
    podman-compose
+   pritunl-client
    ripgrep
    sd
    slurp
