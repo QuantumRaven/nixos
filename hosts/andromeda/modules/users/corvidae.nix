@@ -16,6 +16,9 @@
    acpi
    alacritty
    asciinema
+   aspell
+   aspellDicts.en
+   aspellDicts.en-cmputers
    ansible
    ansible-lint
    bat
