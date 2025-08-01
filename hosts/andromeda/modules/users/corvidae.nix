@@ -18,7 +18,7 @@
    asciinema
    aspell
    aspellDicts.en
-   aspellDicts.en-cmputers
+   aspellDicts.en-computers
    ansible
    ansible-lint
    bat
