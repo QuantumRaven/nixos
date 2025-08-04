@@ -25,7 +25,7 @@
    brave
    btop
    discord
-   doggo`
+   doggo
    duf
    fastfetch
    fd
