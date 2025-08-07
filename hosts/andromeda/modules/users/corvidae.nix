@@ -51,6 +51,7 @@
    pavucontrol
    podman-compose
    pritunl-client
+   reco
    ripgrep
    sd
    slurp
