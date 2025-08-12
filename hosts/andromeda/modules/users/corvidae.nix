@@ -29,6 +29,7 @@
    duf
    fastfetch
    fd
+   feh
    ffmpeg
    fish
    firefox
