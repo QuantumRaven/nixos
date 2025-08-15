@@ -63,6 +63,7 @@
    tree
    unzip
    uv
+   wdisplays
    wf-recorder
    wget2
    wl-clipboard-rs
@@ -72,6 +73,7 @@
    xdg-desktop-portal-wlr
    xh
    xwayland
+   zed-editor
    zellij
    zola
    ];
