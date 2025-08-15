@@ -4,12 +4,9 @@
 
   networking.firewall = {
      allowedTCPPorts = [
-     631
-     8000 # paperless-ngx
+     10400
      ];
      allowedUDPPorts = [
-     631
-     5353
      ];
   };
 
