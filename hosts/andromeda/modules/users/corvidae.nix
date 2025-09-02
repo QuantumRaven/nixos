@@ -36,6 +36,7 @@
    fzf
    gimp
    gnucash
+   google-chrome
    grim
    keepassxc
    librewolf
