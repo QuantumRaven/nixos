@@ -39,6 +39,7 @@
    grim
    keepassxc
    librewolf
+   libreoffice
    lsd
    lshw
    mako
