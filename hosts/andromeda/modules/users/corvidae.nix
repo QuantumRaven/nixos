@@ -24,6 +24,7 @@
    bat
    brave
    btop
+   chromium
    discord
    doggo
    duf
@@ -36,7 +37,6 @@
    fzf
    gimp
    gnucash
-   google-chrome
    grim
    keepassxc
    librewolf
