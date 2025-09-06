@@ -37,6 +37,7 @@
    fzf
    gimp
    gnucash
+   gnupg
    grim
    keepassxc
    librewolf
