@@ -47,6 +47,7 @@
    mako
    mpv
    nfs-utils
+   nwg-displays
    obs-studio
    openssl
    pandoc
@@ -66,7 +67,6 @@
    tree
    unzip
    uv
-   wdisplays
    wf-recorder
    wget2
    wl-clipboard-rs
