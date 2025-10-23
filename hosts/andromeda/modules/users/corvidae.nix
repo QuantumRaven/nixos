@@ -62,6 +62,7 @@
    slurp
    sshpass
    starship
+   super-productivity
    texliveFull
    texmaker
    tree
