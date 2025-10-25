@@ -77,6 +77,7 @@
    xdg-desktop-portal-wlr
    xh
    xwayland
+   zeal
    zed-editor
    zellij
    zola
