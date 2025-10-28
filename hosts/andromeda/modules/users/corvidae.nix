@@ -1,4 +1,4 @@
-{ 
+{
   config,
   pkgs,
   lib,
@@ -40,6 +40,7 @@
    gnupg
    grim
    keepassxc
+   krita
    librewolf
    libreoffice
    lsd
