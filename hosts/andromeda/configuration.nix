@@ -8,11 +8,28 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/audio.nix
+      ./modules/bootloader.nix
+      ./modules/disable_nano.nix
+      ./modules/firewall.nix
+      ./modules/fish.nix
+      ./modules/git.nix
+      ./modules/impure_pkgs.nix
+      ./modules/neovim.nix
+      ./modules/networking.nix
+      ./modules/nix_flakes.nix
+      ./modules/openssh.nix
+      ./modules/podman.nix
+      ./modules/starship.nix
+      ./modules/sway.nix
+      ./modules/sys_pkgs.nix
+      ./modules/time.nix
+      ./modules/users/corvidae.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
 
   # networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -38,7 +55,7 @@
   # services.xserver.enable = true;
 
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -120,4 +137,3 @@
   system.stateVersion = "25.05"; # Did you read the comment?
 
 }
-
