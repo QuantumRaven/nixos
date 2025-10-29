@@ -25,6 +25,7 @@
    brave
    btop
    chromium
+   dialog
    discord
    doggo
    duf
