@@ -21,6 +21,7 @@
       ./modules/openssh.nix
       ./modules/podman.nix
       ./modules/starship.nix
+      ./modules/steam.nix
       ./modules/sway.nix
       ./modules/sys_pkgs.nix
       ./modules/time.nix
