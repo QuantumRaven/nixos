@@ -14,7 +14,6 @@
    shell = pkgs.fish;
    packages = with pkgs; [
    acpi
-   alacritty
    asciinema
    aspell
    aspellDicts.en
@@ -51,7 +50,6 @@
    mpv
    nfs-utils
    nwg-displays
-   obs-studio
    openssl
    pandoc
    pciutils
@@ -65,7 +63,7 @@
    slurp
    sshpass
    starship
-   super-productivity
+   terminator
    texliveFull
    texmaker
    tree
