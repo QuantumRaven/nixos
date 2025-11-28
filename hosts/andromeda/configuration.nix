@@ -16,6 +16,7 @@
       ./modules/git.nix
       ./modules/impure_pkgs.nix
       ./modules/neovim.nix
+      ./modules/nerd_fonts.nix
       ./modules/networking.nix
       ./modules/nix_flakes.nix
       ./modules/openssh.nix
