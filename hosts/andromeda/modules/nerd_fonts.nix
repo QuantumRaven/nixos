@@ -7,9 +7,9 @@
 
 {
 
-  font.packages = with pkgs; [
+  fonts.packages = with pkgs; [
     fira-code
-    fira-code-symboles
+    fira-code-symbols
   ];
 
 }
