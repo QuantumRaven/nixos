@@ -40,6 +40,7 @@
    gnucash
    gnupg
    grim
+   jetbrains.idea-community-bin
    keepassxc
    krita
    librewolf
