@@ -19,7 +19,6 @@
    aspellDicts.en
    aspellDicts.en-computers
    ansible
-   ansible-lint
    bat
    brave
    btop
