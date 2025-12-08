@@ -39,6 +39,7 @@
    gnupg
    grim
    jetbrains.idea-community-bin
+   kdePackages.konsole
    keepassxc
    krita
    librewolf
