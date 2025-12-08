@@ -79,6 +79,7 @@
    xh
    xwayland
    zeal
+   zed-editor
    zellij
    zola
    ];
