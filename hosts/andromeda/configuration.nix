@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/audio.nix
       ./modules/bootloader.nix
+      ./modules/cosmic.nix
       ./modules/disable_nano.nix
       ./modules/firewall.nix
       ./modules/fish.nix
