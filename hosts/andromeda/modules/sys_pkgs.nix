@@ -12,7 +12,7 @@
    gcc
    gnumake
    go
-   python3Full
+   python315
    ruff
    distrobox
   
