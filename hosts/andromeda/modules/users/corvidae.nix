@@ -33,7 +33,6 @@
    ffmpeg
    fish
    firefox
-   flameshot
    fzf
    gimp
    gnucash
