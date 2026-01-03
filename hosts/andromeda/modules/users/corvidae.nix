@@ -23,6 +23,7 @@
    brave
    btop
    chromium
+   cockatrice
    dialog
    discord
    doggo
