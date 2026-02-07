@@ -48,6 +48,7 @@
    libreoffice
    lsd
    lshw
+   mnemosyne
    mpv
    nfs-utils
    nwg-displays
