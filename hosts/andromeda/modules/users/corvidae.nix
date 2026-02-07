@@ -24,6 +24,7 @@
    btop
    chromium
    cockatrice
+   cosmic-reader
    dialog
    discord
    doggo
@@ -77,6 +78,7 @@
    xdg-desktop-portal-gtk
    xdg-desktop-portal-wlr
    xh
+   xreader
    xwayland
    zeal
    zed-editor
