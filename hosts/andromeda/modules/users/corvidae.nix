@@ -47,7 +47,6 @@
    libreoffice
    lsd
    lshw
-   mako
    mpv
    nfs-utils
    nwg-displays
