@@ -12,7 +12,7 @@
 
   environment.cosmic.excludePackages = with pkgs; [
     cosmic-edit
-    cosmic-reader
+    xreader
   ];
 
 }
