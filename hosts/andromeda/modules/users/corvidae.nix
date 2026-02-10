@@ -62,6 +62,7 @@
    reco
    ripgrep
    sd
+   signal-desktop
    slurp
    sshpass
    starship
