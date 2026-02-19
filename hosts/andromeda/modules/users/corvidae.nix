@@ -14,6 +14,7 @@
    shell = pkgs.fish;
    packages = with pkgs; [
    acpi
+   appimage-run
    asciinema
    aspell
    aspellDicts.en
