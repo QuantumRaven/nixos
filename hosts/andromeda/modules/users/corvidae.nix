@@ -49,6 +49,7 @@
    libreoffice
    lsd
    lshw
+   mkpasswd
    mnemosyne
    mpv
    nfs-utils
