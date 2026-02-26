@@ -25,7 +25,7 @@
       ./modules/starship.nix
       ./modules/steam.nix
       ./modules/sway.nix
-      ./modules/synchthing.nix
+      ./modules/syncthing.nix
       ./modules/sys_pkgs.nix
       ./modules/time.nix
       ./modules/users/corvidae.nix
