@@ -63,6 +63,7 @@
    pritunl-client
    reco
    ripgrep
+   ripgrep-all
    sd
    slurp
    sshpass
@@ -70,6 +71,7 @@
    terminator
    texliveFull
    texmaker
+   tldr
    tree
    unzip
    uv
