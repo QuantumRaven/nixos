@@ -4,7 +4,7 @@
 
   networking.firewall = {
      allowedTCPPorts = [
-     10400 # Misc port for web server containers
+       3000 # Linkwarden
      ];
      allowedUDPPorts = [
      ];
