@@ -54,6 +54,7 @@
    mnemosyne
    mpv
    nfs-utils
+   nushell
    nwg-displays
    openssl
    pandoc
