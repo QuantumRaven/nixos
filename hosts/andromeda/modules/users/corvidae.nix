@@ -42,10 +42,9 @@
    gnucash
    gnupg
    grim
-   jetbrains.idea-community-bin
-   kdePackages.konsole
    keepassxc
    krita
+   lazygit
    librewolf
    libreoffice
    lsd
