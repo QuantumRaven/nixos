@@ -1,4 +1,4 @@
-{ 
+{
   config,
   pkgs,
   lib,
@@ -16,33 +16,39 @@
    alacritty
    asciinema
    ansible
-   ansible-lint
+   appimage-run
    bat
    brave
    btop
+   cockatrice
    discord
    dnsutils
-   doggo   
+   doggo
    du-dust
    duf
    fastfetch
    fd
-   ffmpeg
+   ffmpeg-full
    fish
    firefox
    fzf
    gimp
    gnucash
    grim
+   handbrake
    joplin-desktop
    keepassxc
+   lazygit
+   libreoffice
    librewolf
    lsd
    lshw
-   mako
    mpv
    nfs-utils
+   nftables
+   nushell
    obs-studio
+   obs-studio-plugins.obs-backgroundremoval
    openssl
    pandoc
    pciutils
@@ -52,7 +58,6 @@
    ripgrep
    sd
    slurp
-   sshpass
    starship
    texliveFull
    texmaker
@@ -68,8 +73,9 @@
    xdg-desktop-portal-wlr
    xh
    xwayland
+   zed-editor
    zellij
-   zola
+   zoxide
    ];
 
    };

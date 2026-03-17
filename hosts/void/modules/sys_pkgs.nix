@@ -7,7 +7,7 @@
 
   # Install packages
   environment.systemPackages = with pkgs; [
-   
+
    home-manager
    gcc
    gnumake
@@ -15,7 +15,9 @@
    python3Full
    ruff
    distrobox
-  
+   gnupg
+   sshpass
+
   ];
 
 }

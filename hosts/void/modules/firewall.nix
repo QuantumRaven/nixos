@@ -3,12 +3,27 @@
 {
 
   networking.firewall = {
-     allowedTCPPorts = [ 
-     8000 # paperless-ngx
-     8080 # nextcloud
-     10400 # Misc containers
+     allowedTCPPorts = [
+      # Containers
+        3000 # Gitea
+      # Network File Share
+        111
+        2049
+        4000
+        4001
+        4002
+        20048
+
      ];
-#     allowedUDPPorts = [ ... ];
+     allowedUDPPorts = [
+      # Network File Share
+        111
+        2049
+        4000
+        4001
+        4002
+        20048
+];
   };
 
 }
