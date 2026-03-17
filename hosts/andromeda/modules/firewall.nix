@@ -5,6 +5,7 @@
   networking.firewall = {
      allowedTCPPorts = [
        3000 # Linkwarden
+       3456 # Vikunja
      ];
      allowedUDPPorts = [
      ];
