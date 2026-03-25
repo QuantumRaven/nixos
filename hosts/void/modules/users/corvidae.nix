@@ -31,6 +31,7 @@
    ffmpeg-full
    fish
    firefox
+   fluffychat
    fzf
    gimp
    gnucash
