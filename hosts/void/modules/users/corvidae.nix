@@ -26,12 +26,12 @@
    doggo
    du-dust
    duf
+   element-desktop
    fastfetch
    fd
    ffmpeg-full
    fish
    firefox
-   fluffychat
    fzf
    gimp
    gnucash
