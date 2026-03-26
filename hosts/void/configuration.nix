@@ -18,7 +18,6 @@
       ./modules/kvm.nix
       ./modules/neovim.nix
       ./modules/networking.nix
-#      ./modules/nfs.nix
       ./modules/nix_flakes.nix
       ./modules/openssh.nix
       ./modules/podman.nix
