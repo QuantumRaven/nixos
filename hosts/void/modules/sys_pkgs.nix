@@ -15,7 +15,6 @@
    python3Full
    ruff
    distrobox
-   gnupg
    sshpass
 
   ];
