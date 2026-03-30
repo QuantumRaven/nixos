@@ -6,7 +6,6 @@
 }:
 
 {
-
  users.users.corvidae = {
    isNormalUser = true;
    description = "corvidae";
@@ -61,7 +60,6 @@
    protonup-qt
    ripgrep
    sd
-   signal-desktop
    slurp
    starship
    texliveFull
@@ -82,7 +80,5 @@
    zellij
    zoxide
    ];
-
-   };
-
+  };
 }
