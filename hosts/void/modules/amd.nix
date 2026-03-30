@@ -6,9 +6,7 @@
 }:
 
 {
-
   hardware.graphics = {
     enable = true;
   };
-
 }

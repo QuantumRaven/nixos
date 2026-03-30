@@ -15,7 +15,6 @@
       # ./modules/garbage-collection.nix
       ./modules/git.nix
       ./modules/impure_pkgs.nix
-      ./modules/kvm.nix
       ./modules/neovim.nix
       ./modules/networking.nix
       ./modules/nix_flakes.nix
@@ -25,6 +24,7 @@
       ./modules/steam.nix
       ./modules/syncthing.nix
       ./modules/sys_pkgs.nix
+      ./modules/virtualization.nix
       ./modules/users/corvidae.nix
     ];
 
@@ -32,7 +32,6 @@
   hardware.enableRedistributableFirmware = true;
 
   # Bootloader.
-  boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
 

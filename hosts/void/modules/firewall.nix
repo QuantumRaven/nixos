@@ -13,7 +13,6 @@
         4001
         4002
         20048
-
      ];
      allowedUDPPorts = [
       # Network File Share
