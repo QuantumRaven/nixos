@@ -52,12 +52,16 @@
    obs-studio-plugins.obs-backgroundremoval
    openssl
    pandoc
-   pciutils
-   pipewire
    pavucontrol
+   pciutils
+   pinentry-all
+   pipewire
    podman-compose
+   protonplus
+   protonup-qt
    ripgrep
    sd
+   signal-desktop
    slurp
    starship
    texliveFull
