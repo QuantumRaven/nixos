@@ -50,6 +50,7 @@
      obs-studio
      obs-studio-plugins.obs-backgroundremoval
      openssl
+     p7zip
      pandoc
      pavucontrol
      pciutils
