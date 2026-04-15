@@ -29,7 +29,6 @@
      fastfetch
      fd
      ffmpeg-full
-     fish
      firefox
      fzf
      gimp
