@@ -12,7 +12,6 @@
    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
    shell = pkgs.bash;
    packages = with pkgs; [
-     alacritty
      asciinema
      ansible
      appimage-run
@@ -31,6 +30,7 @@
      ffmpeg-full
      firefox
      fzf
+     ghostty
      gimp
      gnucash
      grim
