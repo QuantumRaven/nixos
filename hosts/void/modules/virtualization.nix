@@ -12,6 +12,7 @@
   programs.virt-manager.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   services.spice-vdagentd.enable = true;
+  services.qemuGuest.enable = true;
 
 # Containerization - Podman
   # Enable podman
