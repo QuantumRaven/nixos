@@ -10,7 +10,7 @@
    isNormalUser = true;
    description = "corvidae";
    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
-   shell = pkgs.fish;
+   shell = pkgs.bash;
    packages = with pkgs; [
      alacritty
      asciinema
