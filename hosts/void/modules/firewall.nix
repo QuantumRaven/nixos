@@ -5,7 +5,7 @@
   networking.firewall = {
      allowedTCPPorts = [
        3456 # Vikunja
-       8000 # Pythom http module
+       8000 # Python http module
      ];
      allowedUDPPorts = [
      ];
