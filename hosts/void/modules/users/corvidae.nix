@@ -60,6 +60,7 @@
      protonplus
      protonup-qt
      ripgrep
+     ripgrep-all
      sd
      slurp
      starship
