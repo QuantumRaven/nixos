@@ -36,6 +36,7 @@
      gnucash
      grim
      handbrake
+     html-tidy
      joplin-desktop
      keepassxc
      lazygit
