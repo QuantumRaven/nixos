@@ -7,6 +7,7 @@
 
   # Install packages
   environment.systemPackages = with pkgs; [
+    dnsmasq
     gcc
     gnumake
     go
