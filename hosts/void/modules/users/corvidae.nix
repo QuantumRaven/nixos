@@ -59,6 +59,7 @@
      podman-compose
      protonplus
      protonup-qt
+     reco
      ripgrep
      ripgrep-all
      sd
