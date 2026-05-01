@@ -13,7 +13,7 @@
       ./modules/disable_nano.nix
       ./modules/fish.nix
       ./modules/firewall.nix
-      # ./modules/garbage-collection.nix
+      ./modules/gnupg.nix
       ./modules/git.nix
       ./modules/impure_pkgs.nix
       ./modules/neovim.nix

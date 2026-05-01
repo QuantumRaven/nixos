@@ -33,6 +33,7 @@
      ghostty
      gimp
      gnucash
+     gnupg
      grim
      handbrake
      html-tidy
