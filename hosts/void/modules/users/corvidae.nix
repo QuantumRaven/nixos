@@ -22,7 +22,7 @@
      discord
      dnsutils
      doggo
-     du-dust
+     dust
      duf
      element-desktop
      fastfetch
