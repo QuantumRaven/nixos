@@ -22,7 +22,7 @@
       ./modules/openssh.nix
       ./modules/podman.nix
       ./modules/starship.nix
-      ./modules/steam.nix
+      #./modules/steam.nix
       ./modules/storage.nix
       ./modules/syncthing.nix
       ./modules/sys_pkgs.nix
