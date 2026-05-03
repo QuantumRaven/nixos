@@ -10,6 +10,7 @@
      ];
      allowedUDPPorts = [
      ];
+     trustedInterfaces = [ "virbr0" ];
   };
 
 }
