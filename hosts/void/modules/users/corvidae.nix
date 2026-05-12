@@ -38,6 +38,7 @@
      handbrake
      html-tidy
      joplin-desktop
+     kdePackages.kdenlive
      keepassxc
      lazygit
      libreoffice
