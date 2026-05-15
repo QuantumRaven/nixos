@@ -65,6 +65,7 @@
      ripgrep
      ripgrep-all
      sd
+     signal-desktop
      slurp
      starship
      texliveFull
