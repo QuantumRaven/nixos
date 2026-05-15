@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/amd.nix
       ./modules/bootloader.nix
+      ./modules/caddy.nix
       ./modules/disable_nano.nix
       ./modules/fish.nix
       ./modules/firewall.nix
