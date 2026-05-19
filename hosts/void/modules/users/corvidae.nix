@@ -37,6 +37,7 @@
      grim
      handbrake
      html-tidy
+     imagemagick
      joplin-desktop
      kdePackages.kdenlive
      keepassxc
@@ -46,6 +47,7 @@
      lsd
      lshw
      mpv
+     musikcube
      nfs-utils
      nftables
      nushell
