@@ -84,10 +84,12 @@
      xdg-desktop-portal-wlr
      xh
      xwayland
+     yt-dlp
      zeal
      zed-editor
      zellij
      zoxide
+     zstd
    ];
   };
 }
