@@ -12,11 +12,11 @@
       ./modules/bootloader.nix
       ./modules/caddy.nix
       ./modules/disable_nano.nix
-      ./modules/fish.nix
       ./modules/firewall.nix
       ./modules/gnupg.nix
       ./modules/git.nix
       ./modules/impure_pkgs.nix
+      ./modules/localsend.nix
       ./modules/neovim.nix
       ./modules/networking.nix
       ./modules/nix_flakes.nix
