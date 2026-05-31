@@ -29,6 +29,7 @@
      fd
      ffmpeg-full
      firefox
+     fuzzle
      fzf
      ghostty
      gimp
@@ -41,11 +42,13 @@
      joplin-desktop
      kdePackages.kdenlive
      keepassxc
+     krita
      lazygit
      libreoffice
      librewolf
      lsd
      lshw
+     mako
      mpv
      musikcube
      nfs-utils
@@ -80,6 +83,7 @@
      wl-clipboard-rs
      wofi
      xdg-desktop-portal
+     xdg-desktop-portal-gnome
      xdg-desktop-portal-gtk
      xdg-desktop-portal-wlr
      xh

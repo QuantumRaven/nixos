@@ -19,6 +19,7 @@
       ./modules/localsend.nix
       ./modules/neovim.nix
       ./modules/networking.nix
+      ./modules/niri.nix
       ./modules/nix_flakes.nix
       ./modules/openssh.nix
       ./modules/podman.nix
