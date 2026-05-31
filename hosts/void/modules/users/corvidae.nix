@@ -29,7 +29,7 @@
      fd
      ffmpeg-full
      firefox
-     fuzzle
+     fuzzel
      fzf
      ghostty
      gimp
@@ -73,6 +73,8 @@
      signal-desktop
      slurp
      starship
+     swaybg
+     swayidle
      texliveFull
      texmaker
      tldr
