@@ -13,6 +13,7 @@
       ./modules/caddy.nix
       ./modules/disable_nano.nix
       ./modules/firewall.nix
+      ./modules/gnome-keyring.nix
       ./modules/gnupg.nix
       ./modules/git.nix
       ./modules/impure_pkgs.nix
@@ -26,8 +27,9 @@
       ./modules/starship.nix
       ./modules/steam.nix
       ./modules/storage.nix
-      ./modules/syncthing.nix
       ./modules/sys_pkgs.nix
+      ./modules/xwayland.nix
+      ./modules/waybar.nix
       ./modules/virtualization.nix
       ./modules/users/corvidae.nix
     ];
