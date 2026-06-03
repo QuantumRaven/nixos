@@ -37,6 +37,7 @@
      gnupg
      grim
      handbrake
+     inkscape
      html-tidy
      imagemagick
      joplin-desktop
@@ -46,6 +47,7 @@
      lazygit
      libreoffice
      librewolf
+     lmms
      lsd
      lshw
      mako
