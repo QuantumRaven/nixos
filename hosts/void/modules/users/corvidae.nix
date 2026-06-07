@@ -75,8 +75,6 @@
      signal-desktop
      slurp
      starship
-     swaybg
-     swayidle
      texliveFull
      texmaker
      tldr
@@ -85,7 +83,6 @@
      wf-recorder
      wget2
      wl-clipboard-rs
-     wofi
      xdg-desktop-portal
      xdg-desktop-portal-gnome
      xdg-desktop-portal-gtk
