@@ -33,7 +33,6 @@
      fzf
      ghostty
      gimp
-     gnucash
      gnupg
      grim
      handbrake
@@ -93,6 +92,7 @@
      zeal
      zed-editor
      zellij
+     zsnes2
      zoxide
      zstd
    ];
