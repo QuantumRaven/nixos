@@ -16,7 +16,7 @@
       dns = ["8.8.8.8"];
       matchConfig.Name = "eno1"; # Change to your actual interface name
       address = [
-        "192.168.0.100/24"
+        "192.168.0.101/24"
       ];
       routes = [
         {
