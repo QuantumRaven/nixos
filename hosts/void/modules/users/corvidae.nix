@@ -57,6 +57,7 @@
      nushell
      obs-studio
      obs-studio-plugins.obs-backgroundremoval
+     oklch-color-picker
      openssl
      p7zip
      pandoc
