@@ -90,6 +90,7 @@
    zed-editor
    zellij
    zola
+   zoxide
    ];
 
    };
