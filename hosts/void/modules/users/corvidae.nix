@@ -36,8 +36,8 @@
      gnupg
      grim
      handbrake
-     inkscape
      html-tidy
+     inkscape
      imagemagick
      joplin-desktop
      kdePackages.kdenlive
@@ -69,6 +69,7 @@
      protonplus
      protonup-qt
      reco
+     retroarch-full
      ripgrep
      ripgrep-all
      sd
