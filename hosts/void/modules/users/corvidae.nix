@@ -19,6 +19,7 @@
      brave
      btop
      cockatrice
+     diff-so-fancy
      discord
      dnsutils
      doggo
@@ -69,7 +70,6 @@
      protonplus
      protonup-qt
      reco
-     retroarch-full
      ripgrep
      ripgrep-all
      sd
