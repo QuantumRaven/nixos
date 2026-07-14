@@ -35,6 +35,7 @@
      ghostty
      gimp
      gnupg
+     google-chrome
      grim
      handbrake
      html-tidy
