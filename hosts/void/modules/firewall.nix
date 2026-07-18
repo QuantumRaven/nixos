@@ -5,7 +5,6 @@
   networking.firewall = {
      allowedTCPPorts = [
        3456 # Vikunja
-       8080 # Nextcloud container
      ];
      allowedUDPPorts = [
      ];
