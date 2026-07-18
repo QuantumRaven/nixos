@@ -10,9 +10,11 @@
      allowedUDPPorts = [
      ];
      allowedTCPPortRanges = [
+       {
        # For various self-hosted apps/services
-       from = 8000
-       to = 8100
+       from = 8000;
+       to = 8100;
+       }
      ];
      trustedInterfaces = [ "virbr0" ];
   };
