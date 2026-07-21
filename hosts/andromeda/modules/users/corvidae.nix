@@ -30,6 +30,7 @@
    discord
    doggo
    duf
+   diff-so-fancy
    fastfetch
    fd
    feh
