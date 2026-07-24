@@ -29,7 +29,6 @@
       ./modules/storage.nix
       ./modules/sys_pkgs.nix
       ./modules/xwayland.nix
-      ./modules/waybar.nix
       ./modules/virtualization.nix
       ./modules/users/corvidae.nix
     ];
