@@ -18,6 +18,7 @@
      bat
      brave
      btop
+     buku
      cockatrice
      diff-so-fancy
      discord
