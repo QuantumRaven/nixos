@@ -23,7 +23,6 @@
       ./modules/niri.nix
       ./modules/nix_flakes.nix
       ./modules/openssh.nix
-      ./modules/podman.nix
       ./modules/starship.nix
       ./modules/steam.nix
       ./modules/storage.nix
