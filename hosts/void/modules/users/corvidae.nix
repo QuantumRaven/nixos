@@ -73,6 +73,7 @@
      protonplus
      protonup-qt
      reco
+     renpy
      ripgrep
      ripgrep-all
      sd
