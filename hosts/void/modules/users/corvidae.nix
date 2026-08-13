@@ -37,6 +37,7 @@
      gimp
      gnupg
      google-chrome
+     godot
      grim
      handbrake
      html-tidy
