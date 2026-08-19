@@ -98,8 +98,9 @@
      zeal
      zed-editor
      zellij
-     zsnes2
+     zettlr
      zoxide
+     zsnes2
      zstd
    ];
   };
