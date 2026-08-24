@@ -58,6 +58,7 @@
      musikcube
      nfs-utils
      nftables
+     novelwriter
      nushell
      obs-studio
      obs-studio-plugins.obs-backgroundremoval
