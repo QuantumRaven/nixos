@@ -11,7 +11,7 @@
     gcc
     gnumake
     go
-    python315
+    python314
     ruff
     distrobox
     sshpass
