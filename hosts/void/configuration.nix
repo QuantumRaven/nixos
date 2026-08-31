@@ -13,7 +13,7 @@
       ./modules/caddy.nix
       ./modules/disable_nano.nix
       ./modules/firewall.nix
-      ./modules/gnome-keyring.nix
+      ./modules/gnome_keyring.nix
       ./modules/gnupg.nix
       ./modules/git.nix
       ./modules/impure_pkgs.nix
