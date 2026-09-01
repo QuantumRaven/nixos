@@ -11,13 +11,14 @@
     gcc
     gnumake
     go
-    python314
-    python314Packages.ipython
-    python314Packages.jinja2
-    python314Packages.matplotlib
-    python314Packages.numpy
-    python314Packages.scipy
-    python314Packages.sympy
+    (pkgs.python314.withPackages (ps: with ps; [
+      ipython
+      jinja2
+      matplotlib
+      numpy
+      scipy
+      sympy
+    ]))
     ruff
     distrobox
     sshpass
