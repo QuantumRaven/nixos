@@ -12,10 +12,12 @@
     gnumake
     go
     (pkgs.python314.withPackages (ps: with ps; [
+      hypothesis
       ipython
       jinja2
       matplotlib
       numpy
+      pytest
       scipy
       sympy
     ]))
