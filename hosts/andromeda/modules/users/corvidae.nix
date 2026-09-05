@@ -11,7 +11,7 @@
    isNormalUser = true;
    description = "corvidae";
    extraGroups = [ "networkmanager" "wheel" ];
-   shell = pkgs.fish;
+   shell = pkgs.bash;
    packages = with pkgs; [
    acpi
    appimage-run
@@ -54,6 +54,7 @@
    mnemosyne
    mpv
    nfs-utils
+   novelwriter
    nushell
    nwg-displays
    openssl
