@@ -17,6 +17,7 @@
       jinja2
       matplotlib
       numpy
+      pygame
       pytest
       scipy
       sympy
