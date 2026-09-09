@@ -58,6 +58,7 @@
      musikcube
      nfs-utils
      nftables
+     nmap
      novelwriter
      nushell
      obs-studio
@@ -98,6 +99,7 @@
      yt-dlp
      zeal
      zed-editor
+     zenmap
      zellij
      zettlr
      zoxide
