@@ -103,7 +103,7 @@
      zellij
      zettlr
      zoxide
-     zsnes2
+     # zsnes2
      zstd
    ];
   };
