@@ -25,4 +25,5 @@
             devices = [ "andromeda" ];
           };
       };
+};
 }
