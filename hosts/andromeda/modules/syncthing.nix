@@ -13,7 +13,7 @@
     settings = {
       devices = {
         "Void" = {
-          id = "3EXOZ3D-4FXMFMI-SH57TQJ-BSLMAFM-I3K647Z-KFDAUHX-DQMZSZJ-62PQ3AT"
+          id = "3EXOZ3D-4FXMFMI-SH57TQJ-BSLMAFM-I3K647Z-KFDAUHX-DQMZSZJ-62PQ3AT";
         };
       folders = {
         "syncthing" = {
