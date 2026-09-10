@@ -21,7 +21,7 @@
         "share" = {
           id = "share";
           path = "/var/lib/syncthing/share_all";
-          devices = [ "andromeda" ];
+          devices = [ "void" ];
         };
       };
       };
