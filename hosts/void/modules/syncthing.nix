@@ -14,7 +14,7 @@
     settings = {
       devices = {
         "andromeda" = {
-          id = "D2M4SH5-RYRMBVF-OIC67Q2-6WWX3QL-HNHZ6CX-I5VS3YT-MZYNXKP-5PB5YQL";
+          id = "6HSE37A-2CDTMDV-GFB4Z5G-KDZWQPM-NCJZUAF-RVB5GBW-3E7FORB-JW4VDQW"; 
         };
       };
         };
