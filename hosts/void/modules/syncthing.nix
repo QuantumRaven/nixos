@@ -10,7 +10,6 @@
     enable = true;
     openDefaultPorts = true;
     guiAddress = "127.0.0.1:8384";
-    user = "corvidae";
     group = "users";
     settings = {
       devices = {
@@ -20,7 +19,7 @@
       };
       folders = {
           "syncthing" = {
-            path = "/var/lib/syncthing";
+            path = "/home/corvidae/storage/syncthing";
             devices = [ "Andromeda" ];
           };
         };
