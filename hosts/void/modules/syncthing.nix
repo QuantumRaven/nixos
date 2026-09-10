@@ -21,7 +21,7 @@
       folders = {
         "share" = {
           id = "share";
-          path = "/var/lib/syncthing/share_all";
+          path = "/home/corvidae/storage/share_all";
           devices = [ "andromeda" ];
         };
         };
