@@ -11,6 +11,8 @@
     openDefaultPorts = true;
     guiAddress = "127.0.0.1:8384";
     group = "users";
+    user = "corvidae";
+    configDir = "/home/corvidae/.config/syncthing";
     settings = {
       devices = {
         "void" = {
@@ -20,7 +22,7 @@
       folders = {
         "share" = {
           id = "share";
-          path = "/var/lib/syncthing/share_all";
+          path = "/home/corvidae/share_all";
           devices = [ "void" ];
         };
       };
