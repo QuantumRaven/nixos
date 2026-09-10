@@ -17,6 +17,13 @@
           id = "N5Z6FGP-QL6ITEG-4S5O4VQ-5GZLFH7-WAIOC6E-RE3U266-TA36WXZ-76CL2AW";
         };
       };
+      folders = {
+        "share" = {
+          id = "share";
+          path = "/var/lib/syncthing/share_all";
+          devices = [ "andromeda" ];
+        };
+      };
       };
     };
 }
