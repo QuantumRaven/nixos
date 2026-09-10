@@ -17,12 +17,6 @@
           id = "PIN7JW6-2Z6ZCGT-QHK2TSQ-TGPNXZ3-AI3O6M2-URZBNZI-BB3GXQT-B7PEJAW";
         };
       };
-      folders = {
-        "syncthing" = {
-          path = "/home/corvidae/syncthing";
-          devices = [ "void" ];
-        };
-      };
       };
     };
 }
