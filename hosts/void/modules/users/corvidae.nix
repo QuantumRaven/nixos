@@ -9,7 +9,7 @@
  users.users.corvidae = {
    isNormalUser = true;
    description = "corvidae";
-   extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+   extraGroups = [ "networkmanager" "wheel" "libvirtd" "syncthing" ];
    shell = pkgs.bash;
    packages = with pkgs; [
      asciinema

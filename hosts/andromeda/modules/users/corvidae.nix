@@ -10,7 +10,7 @@
  users.users.corvidae = {
    isNormalUser = true;
    description = "corvidae";
-   extraGroups = [ "networkmanager" "wheel" ];
+   extraGroups = [ "networkmanager" "wheel" "syncthing" ];
    shell = pkgs.bash;
    packages = with pkgs; [
    acpi
