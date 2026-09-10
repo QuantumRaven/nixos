@@ -14,7 +14,7 @@
     settings = {
       devices = {
         "void" = {
-          id = "PIN7JW6-2Z6ZCGT-QHK2TSQ-TGPNXZ3-AI3O6M2-URZBNZI-BB3GXQT-B7PEJAW";
+          id = "N5Z6FGP-QL6ITEG-4S5O4VQ-5GZLFH7-WAIOC6E-RE3U266-TA36WXZ-76CL2AW";
         };
       };
       };
