@@ -16,7 +16,7 @@
     settings = {
       devices = {
         "andromeda" = {
-          id = "6HSE37A-2CDTMDV-GFB4Z5G-KDZWQPM-NCJZUAF-RVB5GBW-3E7FORB-JW4VDQW";
+          id = "C7TZOYX-TAGI4NC-V5AZ35V-JZTFPC3-GI5R64M-5LY6YSP-THW65WH-25NAQAO";
         };
       };
       folders = {
