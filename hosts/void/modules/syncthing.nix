@@ -15,6 +15,12 @@
         "Andromeda" = {
           id = "D2M4SH5-RYRMBVF-OIC67Q2-6WWX3QL-HNHZ6CX-I5VS3YT-MZYNXKP-5PB5YQL"
         };
+      folders = {
+          "syncthing" = {
+            path = "/home/corvidae/storage/syncthing";
+            devices = [ "Andromeda" ];
+          };
+        };
       };
     };
   };
