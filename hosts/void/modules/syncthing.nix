@@ -20,7 +20,7 @@
       };
       folders = {
           "syncthing" = {
-            path = "/home/corvidae/storage/syncthing";
+            path = "/var/lib/syncthing";
             devices = [ "Andromeda" ];
           };
         };
