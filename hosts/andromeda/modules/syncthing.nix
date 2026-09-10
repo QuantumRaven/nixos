@@ -14,7 +14,7 @@
     settings = {
       devices = {
         "void" = {
-          id = "N5Z6FGP-QL6ITEG-4S5O4VQ-5GZLFH7-WAIOC6E-RE3U266-TA36WXZ-76CL2AW";
+          id = "ALYQNAN-X7SYWUL-ZHZV6AZ-ZVWGBWL-JJDMTQ6-DJLNUOP-2DGN4YN-ZU3PIAJ";
         };
       };
       folders = {
