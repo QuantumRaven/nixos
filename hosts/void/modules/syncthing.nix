@@ -11,6 +11,7 @@
     openDefaultPorts = true;
     guiAddress = "127.0.0.1:8384";
     group = "users";
+    user = "corvidae";
     settings = {
       devices = {
         "andromeda" = {
