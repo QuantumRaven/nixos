@@ -56,8 +56,6 @@
      mako
      mpv
      musikcube
-     nfs-utils
-     nftables
      nmap
      novelwriter
      nushell
@@ -70,7 +68,6 @@
      pavucontrol
      pciutils
      pinentry-all
-     pipewire
      podman-compose
      protonplus
      protonup-qt
@@ -90,12 +87,7 @@
      wf-recorder
      wget2
      wl-clipboard-rs
-     xdg-desktop-portal
-     xdg-desktop-portal-gnome
-     xdg-desktop-portal-gtk
-     xdg-desktop-portal-wlr
      xh
-     xwayland
      yt-dlp
      zeal
      zed-editor
