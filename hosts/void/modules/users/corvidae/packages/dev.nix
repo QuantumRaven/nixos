@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     asciinema
-    ansible
     bat
     diff-so-fancy
     doggo
@@ -23,7 +22,6 @@
     xh
     zellij
     zoxide
-    uv
     zed-editor
   ];
 }
