@@ -1,0 +1,41 @@
+{ pkgs, ... }:
+
+{
+  home.packages = with pkgs; [
+    acpi
+    appimage-run
+    aspell
+    aspellDicts.en
+    aspellDicts.en-computers
+    bat
+    btop
+    cockatrice
+    cosmic-reader
+    discord
+    doggo
+    feh
+    element-desktop
+    html-tidy
+    keepassxc
+    libreoffice
+    lshw
+    novelwriter
+    oklch-color-picker
+    openssl
+    p7zip
+    pandoc
+    pavucontrol
+    pciutils
+    reco
+    signal-desktop
+    texliveFull
+    texmaker
+    unzip
+    wget2
+    wl-clipboard-rs
+    zeal
+    zenmap
+    zettlr
+    zstd
+  ];
+}

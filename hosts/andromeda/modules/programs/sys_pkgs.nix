@@ -7,15 +7,18 @@
 
   # Install packages
   environment.systemPackages = with pkgs; [
-   
-   home-manager
-   gcc
-   gnumake
-   go
-   python315
-   ruff
-   distrobox
-  
+    dnsmasq
+    nftables
+    nfs-utils
   ];
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    pulse.audio = true;
+  };
+  xdg-portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk]
+  };
 
 }

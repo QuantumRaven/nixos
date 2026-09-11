@@ -8,27 +8,12 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/audio.nix
-      ./modules/bootloader.nix
-      ./modules/cosmic.nix
-      ./modules/disable_nano.nix
-      ./modules/firewall.nix
-      ./modules/fish.nix
-      ./modules/git.nix
+      ./modules/core
+      ./modules/desktop
+      ./modules/programs
+      ./modules/services
+      ./modules/users/corvidae
       ./modules/impure_pkgs.nix
-      ./modules/neovim.nix
-      ./modules/nerd_fonts.nix
-      ./modules/networking.nix
-      ./modules/nix_flakes.nix
-      ./modules/openssh.nix
-      ./modules/podman.nix
-      ./modules/starship.nix
-      ./modules/steam.nix
-      ./modules/sway.nix
-      ./modules/syncthing.nix
-      ./modules/sys_pkgs.nix
-      ./modules/time.nix
-      ./modules/users/corvidae.nix
     ];
 
   # This option defines the first version of NixOS you have installed on this particular machine,
