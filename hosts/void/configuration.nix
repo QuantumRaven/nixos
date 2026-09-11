@@ -8,42 +8,16 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/amd.nix
-      ./modules/bootloader.nix
-      ./modules/caddy.nix
-      ./modules/disable_nano.nix
-      ./modules/firewall.nix
-      ./modules/gnome_keyring.nix
-      ./modules/gnupg.nix
-      ./modules/git.nix
+      ./modules/core
+      ./modules/desktop
+      ./modules/programs
+      ./modules/services/
+      ./modules/users
       ./modules/impure_pkgs.nix
-      ./modules/localsend.nix
-      ./modules/neovim.nix
-      ./modules/networking.nix
-      ./modules/nix_flakes.nix
-      ./modules/openssh.nix
-      ./modules/starship.nix
-      ./modules/steam.nix
-      ./modules/storage.nix
-      ./modules/syncthing.nix
-      ./modules/sys_pkgs.nix
-      ./modules/xwayland.nix
-      ./modules/virtualization.nix
-      ./modules/users/corvidae
     ];
 
   # Hardware
   hardware.enableRedistributableFirmware = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
