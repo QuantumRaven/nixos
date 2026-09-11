@@ -12,7 +12,7 @@
       ./modules/desktop
       ./modules/programs
       ./modules/services
-      ./modules/users
+      ./modules/users/corvidae
       ./modules/impure_pkgs.nix
     ];
 
