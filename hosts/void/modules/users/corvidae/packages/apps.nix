@@ -1,0 +1,39 @@
+{ pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    appimage-run
+    buku
+    cockatrice
+    discord
+    element-desktop
+    gnupg
+    html-tidy
+    joplin-desktop
+    keepassxc
+    libreoffice
+    lshw
+    mako
+    musikcube
+    novelwriter
+    oklch-color-picker
+    openssl
+    p7zip
+    pandoc
+    pavucontrol
+    pciutils
+    pinentry-all
+    podman-compose
+    protonplus
+    protonup-qt
+    reco
+    signal-desktop
+    texliveFull
+    texmaker
+    unzip
+    wget2
+    wl-clipboard-rs
+    zenmap
+    zettlr
+    zstd
+  ];
+}
