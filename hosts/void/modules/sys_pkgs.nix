@@ -18,7 +18,7 @@
   };
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; # or wlr depending on your compositor
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
 }
