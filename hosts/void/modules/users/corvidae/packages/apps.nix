@@ -32,6 +32,7 @@
     unzip
     wget2
     wl-clipboard-rs
+    zeal
     zenmap
     zettlr
     zstd
