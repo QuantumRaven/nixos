@@ -30,7 +30,7 @@
       ./modules/sys_pkgs.nix
       ./modules/xwayland.nix
       ./modules/virtualization.nix
-      ./modules/users/corvidae.nix
+      ./modules/users/corvidae
     ];
 
   # Hardware
