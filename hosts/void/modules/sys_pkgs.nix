@@ -8,22 +8,17 @@
   # Install packages
   environment.systemPackages = with pkgs; [
     dnsmasq
-    gcc
-    gnumake
-    go
-    (pkgs.python314.withPackages (ps: with ps; [
-      hypothesis
-      ipython
-      jinja2
-      matplotlib
-      numpy
-      pygame
-      pytest
-      scipy
-      sympy
-    ]))
-    ruff
-    distrobox
-    sshpass
+    nftables
+    nfs-utils
   ];
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    pulse.enable = true;
+  };
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ]; # or wlr depending on your compositor
+  };
+
 }
