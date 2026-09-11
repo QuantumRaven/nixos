@@ -11,7 +11,7 @@
       ./modules/core
       ./modules/desktop
       ./modules/programs
-      ./modules/services/
+      ./modules/services
       ./modules/users
       ./modules/impure_pkgs.nix
     ];
