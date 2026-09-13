@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  home.packages = with pkgs; [
   asciinema
   bat
   diff-so-fancy
@@ -22,4 +23,5 @@
   zellij
   zoxide
   zed-editor
+  ];
 }
