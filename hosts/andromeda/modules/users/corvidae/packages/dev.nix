@@ -14,6 +14,7 @@
   fzf
   ghostty
   lazygit
+  nushell
   ripgrep
   ripgrep-all
   sd
