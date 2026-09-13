@@ -11,11 +11,7 @@
     nftables
     nfs-utils
   ];
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    pulse.audio = true;
-  };
+
   xdg-portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk];
