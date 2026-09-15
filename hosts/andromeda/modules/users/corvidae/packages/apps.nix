@@ -9,6 +9,7 @@
     aspellDicts.en-computers
     bat
     btop
+    buku
     cockatrice
     cosmic-reader
     discord
