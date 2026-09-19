@@ -19,6 +19,7 @@
     ripgrep-all
     sd
     starship
+    thonny
     tldr
     xh
     zellij
