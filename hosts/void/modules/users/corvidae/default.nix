@@ -18,10 +18,10 @@ in
 
     # Concatenate all modular package lists together
     packages =
-      appPackages.home.packages ++
-      browserPackages.home.packages ++
-      devPackages.home.packages ++
-      learningPackages.home.packages ++
-      mediaPackages.home.packages;
+      appPackages ++
+      browserPackages ++
+      devPackages ++
+      learningPackages ++
+      mediaPackages;
   };
 }

@@ -1,6 +1,5 @@
 { pkgs, ... }:
-{
-  home.packages = with pkgs; [
+with pkgs; [
     ffmpeg-full
     gimp
     godot
@@ -19,4 +18,3 @@
     wf-recorder
     yt-dlp
   ];
-}

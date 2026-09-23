@@ -1,6 +1,6 @@
 { pkgs, ... }:
-{
-  home.packages = with pkgs; [
+
+  with pkgs; [
     appimage-run
     buku
     cockatrice
@@ -37,4 +37,3 @@
     zettlr
     zstd
   ];
-}
