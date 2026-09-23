@@ -17,4 +17,4 @@ with pkgs; [
     slurp
     wf-recorder
     yt-dlp
-  ];
+  ]

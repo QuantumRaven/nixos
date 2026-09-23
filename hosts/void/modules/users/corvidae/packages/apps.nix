@@ -36,4 +36,4 @@
     zenmap
     zettlr
     zstd
-  ];
+  ]

@@ -24,4 +24,4 @@ with pkgs; [
     zellij
     zoxide
     zed-editor
-  ];
+  ]
