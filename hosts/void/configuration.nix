@@ -17,6 +17,7 @@
       ../../modules/core/opengl.nix
       ../../modules/programs/obs_studio.nix
       ../../modules/programs/steam.nix
+      ../../modules/core/storage.nix
       ../../modules/core/virtualization.nix
     ];
 
