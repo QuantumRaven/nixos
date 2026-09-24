@@ -1,5 +1,7 @@
 { pkgs, ... }:
-with pkgs; [
+
+{
+  with pkgs; [
     asciinema
     bat
     diff-so-fancy
@@ -25,3 +27,4 @@ with pkgs; [
     zoxide
     zed-editor
   ]
+}

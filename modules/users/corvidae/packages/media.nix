@@ -1,5 +1,7 @@
 { pkgs, ... }:
-with pkgs; [
+
+{
+  with pkgs; [
     ffmpeg-full
     gimp
     godot
@@ -18,3 +20,4 @@ with pkgs; [
     wf-recorder
     yt-dlp
   ]
+}

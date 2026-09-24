@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
-with pkgs; [
-    anki
-  ]
+{
+  with pkgs; [
+      anki
+   ];
+}
