@@ -14,10 +14,10 @@ with pkgs; [
     lazygit
     lsd
     nushell
+    podman-compose
     ripgrep
     ripgrep-all
     sd
-    starship
     thonny
     tldr
     xh

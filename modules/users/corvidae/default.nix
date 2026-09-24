@@ -1,18 +1,19 @@
 { config, pkgs, lib, ... }:
 
 let
+  secretPassword = import ../secrets/password.nix;
   # Import each package file and extract its list
   appPackages = import ./packages/apps.nix { inherit pkgs; };
   browserPackages = import ./packages/browsers.nix { inherit pkgs; };
   devPackages = import ./packages/dev.nix { inherit pkgs; };
   learningPackages = import ./packages/learning.nix { inherit pkgs; };
-  mediaPackages = import ./packages/media.nix { inherit pkgs; };
 
 in
 {
   users.users.corvidae = {
     isNormalUser = true;
     description = "corvidae";
+    inherit (secretPassword) hashedPassword;
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.bash;
 
@@ -21,7 +22,6 @@ in
       appPackages ++
       browserPackages ++
       devPackages ++
-      learningPackages ++
-      mediaPackages;
+      learningPackages;
   };
 }

@@ -22,7 +22,6 @@
     pavucontrol
     pciutils
     pinentry-all
-    podman-compose
     protonplus
     protonup-qt
     reco

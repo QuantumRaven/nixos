@@ -4,7 +4,6 @@
 
   networking.firewall = {
      allowedTCPPorts = [
-       3456 # Vikunja
      ];
      allowedUDPPorts = [
      ];
@@ -15,7 +14,6 @@
        to = 8100;
        }
      ];
-     trustedInterfaces = [ "virbr0" ];
   };
 
 }
