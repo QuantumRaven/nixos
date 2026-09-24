@@ -21,6 +21,9 @@
       ../../modules/core/virtualization.nix
     ];
 
+  # Void-specific media config.
+  users.users.corvidae.packages = import ../../modules/users/corvidae/packages/media.nix { inherit pkgs; };
+
   # Void-specific firewall ruling. KVM virtual bridge
   networking.firewall.trustedInterfaces = [ "virbr0" ];
 
