@@ -8,6 +8,7 @@
       # Include modules for all systems
       ../../modules/core
       ../../modules/desktop
+      ../../modules/media
       ../../modules/programs
       ../../modules/services
       ../../modules/users/corvidae
