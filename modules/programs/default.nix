@@ -1,6 +1,5 @@
 {
   imports = [
-    ./disable_nano.nix
     ./git.nix
     ./gnupg.nix
     ./neovim.nix
