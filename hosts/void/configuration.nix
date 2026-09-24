@@ -15,6 +15,8 @@
       # Void-specific modules
       ../../modules/core/amd.nix
       ../../modules/core/opengl.nix
+      ../../modules/programs/obs_studio.nix
+      ../../modules/programs/steam.nix
       ../../modules/core/virtualization.nix
     ];
 
