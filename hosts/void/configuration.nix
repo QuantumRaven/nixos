@@ -3,14 +3,16 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      ./bootloader.nix
       ./hardware-configuration.nix
+      # Include modules for all systems
       ../../modules/core
       ../../modules/desktop
       ../../modules/programs
       ../../modules/services
       ../../modules/users/corvidae
       ../../modules/impure_pkgs.nix
-      # Void-specific components
+      # Void-specific modules
       ../../modules/core/amd.nix
       ../../modules/core/opengl.nix
       ../../modules/core/virtualization.nix
