@@ -11,12 +11,15 @@
       void = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          # Import the previous configuration.nix we used,
-          # so the old configuration file still takes effect
           ./hosts/void/configuration.nix
         ];
-      }
-
+      };
+      andromeda = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/andromeda/configuration.nix
+        ];
+      };
     };
   };
 }
