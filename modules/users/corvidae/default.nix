@@ -12,7 +12,6 @@ in
   users.users.corvidae = {
     isNormalUser = true;
     description = "corvidae";
-    inherit (secretPassword) hashedPassword;
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.bash;
 
