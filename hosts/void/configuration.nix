@@ -8,13 +8,13 @@
       # Include modules for all systems
       ../../modules/core
       ../../modules/desktop
-      ../../modules/media
       ../../modules/programs
       ../../modules/services
       ../../modules/users/corvidae
       ../../modules/impure_pkgs.nix
       # Void-specific modules
       ../../modules/core/amd.nix
+      ../../modules/users/corvidae/media.nix
       ../../modules/core/opengl.nix
       ../../modules/programs/obs_studio.nix
       ../../modules/programs/steam.nix
