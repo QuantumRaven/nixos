@@ -1,7 +1,5 @@
 { pkgs, ... }:
 
-{
-
   with pkgs; [
     appimage-run
     buku
@@ -37,5 +35,4 @@
     zenmap
     zettlr
     zstd
-  ];
-}
+  ]

@@ -14,7 +14,6 @@
       ../../modules/impure_pkgs.nix
       # Void-specific modules
       ../../modules/core/amd.nix
-      ../../modules/users/corvidae/packages/media.nix
       ../../modules/core/opengl.nix
       ../../modules/programs/obs_studio.nix
       ../../modules/programs/steam.nix

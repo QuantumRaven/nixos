@@ -1,7 +1,5 @@
 { pkgs, ... }:
 
-{
-  with pkgs; [
+with pkgs; [
       anki
-   ];
-}
+   ]
