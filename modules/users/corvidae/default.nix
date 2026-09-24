@@ -1,7 +1,6 @@
 { config, pkgs, lib, ... }:
 
 let
-  secretPassword = import ../../../secrets/password.nix;
   # Import each package file and extract its list
   appPackages = import ./packages/apps.nix { inherit pkgs; };
   browserPackages = import ./packages/browsers.nix { inherit pkgs; };
