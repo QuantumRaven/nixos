@@ -2,6 +2,7 @@
 
   with pkgs; [
     appimage-run
+    btop
     buku
     cockatrice
     discord
