@@ -9,7 +9,7 @@
     useDHCP = false;
     extraHosts = ''
       127.0.0.1 odin-project.local
-    ''
+    '';
   };
 
   # Enable systemd-networkd
