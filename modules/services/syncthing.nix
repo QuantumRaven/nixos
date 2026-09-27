@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}:
+{ config, pkgs, lib, ... }:
 
 let
   isVoid = config.networking.hostName == "void";
@@ -17,26 +12,28 @@ in
     group = "users";
     user = "corvidae";
     configDir = "/home/corvidae/.config/syncthing";
+
     settings = {
+      # BOTH devices must ALWAYS be declared here so Syncthing's module doesn't panic
       devices = {
-        # Only add Andromeda when building on Void
-        "andromeda" = lib.mkIf isVoid {
+        "andromeda" = {
           id = "C7TZOYX-TAGI4NC-V5AZ35V-JZTFPC3-GI5R64M-5LY6YSP-THW65WH-25NAQAO";
         };
-
-        # Only add Void when building on Andromeda
-        "void" = lib.mkIf isAndromeda {
+        "void" = {
           id = "ALYQNAN-X7SYWUL-ZHZV6AZ-ZVWGBWL-JJDMTQ6-DJLNUOP-2DGN4YN-ZU3PIAJ";
         };
       };
+
       folders = {
         "share" = {
           id = "share";
-          # Dynamically set the correct local path based on the active device
           path = if isVoid then "/home/corvidae/storage/share_all" else "/home/corvidae/share_all";
+
+          # When building on void, the remote peer is "andromeda".
+          # When building on andromeda, the remote peer is "void".
           devices = if isVoid then [ "andromeda" ] else [ "void" ];
         };
-        };
       };
-};
+    };
+  };
 }
