@@ -23,8 +23,11 @@ in
 
     # Settings specific to Andromeda (if Andromeda also uses systemd-boot)
     (lib.mkIf isAndromeda {
-      systemd-boot.enable = true;
-      timeout = 3; # optional
+      grub = {
+        enable = true;
+        device = "nodev";
+        efiSupport = true;
+      };
     })
   ];
 }
