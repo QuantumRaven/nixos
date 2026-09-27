@@ -24,16 +24,36 @@ in
         };
       };
 
-      folders = {
-        "share" = {
-          id = "share";
-          path = if isVoid then "/home/corvidae/storage/share_all" else "/home/corvidae/share_all";
-
-          # When building on void, the remote peer is "andromeda".
-          # When building on andromeda, the remote peer is "void".
-          devices = if isVoid then [ "andromeda" ] else [ "void" ];
+      # New folder paths
+      folders = lib.mkMerge [
+        {
+          "share" = {
+            id = "share";
+            devices = if isVoid then [ "andromeda" ] else [ "void" ];
+          };
         };
-      };
+
+        # Void-specific path
+        (lib.mkIf isVoid {
+          "share".path = "/home/corvidae/storage/share_all";
+        })
+
+        # Andromeda-specific path
+        (lib.mkIf isAndromeda {
+          "share".path = "/home/corvidae/share_all";
+        })
+      ];
+
+      # folders = {
+      #   "share" = {
+      #     id = "share";
+      #     path = if isVoid then "/home/corvidae/storage/share_all" else "/home/corvidae/share_all";
+
+      #     # When building on void, the remote peer is "andromeda".
+      #     # When building on andromeda, the remote peer is "void".
+      #     devices = if isVoid then [ "andromeda" ] else [ "void" ];
+      #   };
+      # };
     };
   };
 }
