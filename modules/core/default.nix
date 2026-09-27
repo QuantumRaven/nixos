@@ -8,5 +8,6 @@
     ./openssh.nix
     ./starship.nix
     ./time.nix
+    ./virtualization.nix
   ];
 }
