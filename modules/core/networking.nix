@@ -21,7 +21,7 @@ in
 
     # Systemd-Networkd Backend
     (lib.mkIf (cfg.backend == "systemd-networkd") {
-      networking.useDHCP = true;
+      networking.useDHCP = false;
       systemd.network = {
         enable = true;
         networks."01-wan" = {
