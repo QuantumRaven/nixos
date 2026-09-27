@@ -42,6 +42,7 @@ in
       networking.networkmanager.enable = true;
       networking.useDHCP = false;
       systemd.services.systemd-networkd-wait-online.enable = false;
+      systemd.targets.network-online.enable = false;
     })
   ];
 }
