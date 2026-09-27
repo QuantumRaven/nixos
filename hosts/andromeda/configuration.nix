@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./bootloader.nix
       ./hardware-configuration.nix
+      ./networkmanager.nix
       ../../modules/core
       ../../modules/desktop
       ../../modules/programs
