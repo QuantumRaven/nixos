@@ -7,6 +7,9 @@
     networkmanager.enable = false;
     # Disable DHCP client to avoid conflicts with systemd-networkd
     useDHCP = false;
+    extraHosts = ''
+      127.0.0.1 odin-project.local
+    ''
   };
 
   # Enable systemd-networkd
