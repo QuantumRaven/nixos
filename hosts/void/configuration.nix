@@ -14,6 +14,7 @@
       ../../modules/impure_pkgs.nix
       # Void-specific modules
       ../../modules/core/amd.nix
+      ../../modules/desktop/kde_plasma.nix
       ../../modules/core/opengl.nix
       ../../modules/programs/obs_studio.nix
       ../../modules/programs/steam.nix
