@@ -34,7 +34,7 @@ in
           id = "share";
           # Dynamically set the correct local path based on the active device
           path = if isVoid then "/home/corvidae/storage/share_all" else "/home/corvidae/share_all";
-          devices = if isVoid then [ "andromeda" ] else [ ]"void" ];
+          devices = if isVoid then [ "andromeda" ] else [ "void" ];
         };
         };
       };
