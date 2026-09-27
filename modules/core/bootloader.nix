@@ -5,12 +5,13 @@ let
   isAndromeda = config.networking.hostName == "andromeda";
 in
 {
-  # Shared settings that apply to both hosts safely
-  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
-  boot.supportedFilesystems = [ "ntfs" ];
-
-  # Single top-level config block using mkMerge
   config = lib.mkMerge [
+    # --- SHARED SETTINGS FOR BOTH HOSTS ---
+    {
+      boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+      boot.supportedFilesystems = [ "ntfs" ];
+    }
+
     # --- VOID CONFIG ---
     (lib.mkIf isVoid {
       boot.loader = {
