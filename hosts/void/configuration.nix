@@ -2,7 +2,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan../bootloader.nix
+    [ # Include the results of the hardware scan
+      ./bootloader.nix
       ./hardware-configuration.nix
       # Include modules for all systems
       ../../modules/core
