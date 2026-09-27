@@ -5,19 +5,24 @@ let
   isAndromeda = config.networking.hostName == "andromeda";
 in
 {
-  # Shared kernel modules and filesystem support across both hosts
+  # Shared kernel modules and filesystems apply to both
   boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
   boot.supportedFilesystems = [ "ntfs" ];
 
-  # Common EFI setting for both
-  boot.loader.efi.canTouchEfiVariables = true;
+  # --- VOID CONFIGURATION ---
+  boot.loader = lib.mkIf isVoid {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+    timeout = 5;
+  };
 
-  # Void Bootloader (systemd-boot)
-  boot.loader.systemd-boot.enable = lib.mkIf isVoid true;
-  boot.loader.timeout = lib.mkIf isVoid 5;
-
-  # Andromeda Bootloader (GRUB) - completely isolated
-  boot.loader.grub.enable = lib.mkIf isAndromeda true;
-  boot.loader.grub.device = lib.mkIf isAndromeda "nodev";
-  boot.loader.grub.efiSupport = lib.mkIf isAndromeda true;
+  # --- ANDROMEDA CONFIGURATION ---
+  boot.loader = lib.mkIf isAndromeda {
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+    };
+    efi.canTouchEfiVariables = true;
+  };
 }
