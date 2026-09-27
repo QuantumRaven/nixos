@@ -31,7 +31,7 @@ in
             id = "share";
             devices = if isVoid then [ "andromeda" ] else [ "void" ];
           };
-        };
+        }
 
         # Void-specific path
         (lib.mkIf isVoid {
