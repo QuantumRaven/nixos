@@ -9,25 +9,15 @@ in
   boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
   boot.supportedFilesystems = [ "ntfs" ];
 
-  boot.loader = lib.mkMerge [
-    # Common bootloader setting
-    {
-      efi.canTouchEfiVariables = true;
-    }
+  # Common EFI setting for both
+  boot.loader.efi.canTouchEfiVariables = true;
 
-    # Settings specific to Void (systemd-boot)
-    (lib.mkIf isVoid {
-      systemd-boot.enable = true;
-      timeout = 5;
-    })
+  # Void Bootloader (systemd-boot)
+  boot.loader.systemd-boot.enable = lib.mkIf isVoid true;
+  boot.loader.timeout = lib.mkIf isVoid 5;
 
-    # Settings specific to Andromeda (grub)
-    (lib.mkIf isAndromeda {
-      grub = {
-        enable = true;
-        device = "nodev";
-        efiSupport = true;
-      };
-    })
-  ];
+  # Andromeda Bootloader (GRUB) - completely isolated
+  boot.loader.grub.enable = lib.mkIf isAndromeda true;
+  boot.loader.grub.device = lib.mkIf isAndromeda "nodev";
+  boot.loader.grub.efiSupport = lib.mkIf isAndromeda true;
 }
