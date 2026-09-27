@@ -10,7 +10,7 @@ in
   boot.supportedFilesystems = [ "ntfs" ];
 
   boot.loader = lib.mkMerge [
-    # Common bootloader settings for both machines
+    # Common bootloader setting
     {
       efi.canTouchEfiVariables = true;
     }
@@ -18,10 +18,10 @@ in
     # Settings specific to Void (systemd-boot)
     (lib.mkIf isVoid {
       systemd-boot.enable = true;
-      timeout = 5; # optional
+      timeout = 5;
     })
 
-    # Settings specific to Andromeda (if Andromeda also uses systemd-boot)
+    # Settings specific to Andromeda (grub)
     (lib.mkIf isAndromeda {
       grub = {
         enable = true;
