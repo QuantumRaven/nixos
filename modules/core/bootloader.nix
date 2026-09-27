@@ -9,24 +9,27 @@ in
   boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
   boot.supportedFilesystems = [ "ntfs" ];
 
-  # --- VOID CONFIG ---
-  config = lib.mkIf isVoid {
-    boot.loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-      timeout = 5;
-    };
-  };
-
-  # --- ANDROMEDA CONFIG ---
-  config = lib.mkIf isAndromeda {
-    boot.loader = {
-      grub = {
-        enable = true;
-        device = "nodev";
-        efiSupport = true;
+  # Single top-level config block using mkMerge
+  config = lib.mkMerge [
+    # --- VOID CONFIG ---
+    (lib.mkIf isVoid {
+      boot.loader = {
+        systemd-boot.enable = true;
+        efi.canTouchEfiVariables = true;
+        timeout = 5;
       };
-      efi.canTouchEfiVariables = true;
-    };
-  };
+    })
+
+    # --- ANDROMEDA CONFIG ---
+    (lib.mkIf isAndromeda {
+      boot.loader = {
+        grub = {
+          enable = true;
+          device = "nodev";
+          efiSupport = true;
+        };
+        efi.canTouchEfiVariables = true;
+      };
+    })
+  ];
 }
