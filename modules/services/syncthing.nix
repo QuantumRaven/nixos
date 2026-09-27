@@ -8,6 +8,7 @@
 let
   isVoid = config.networking.hostName == "void";
   isAndromeda = config.networking.hostName == "andromeda";
+in
 {
   services.syncthing = {
     enable = true;
