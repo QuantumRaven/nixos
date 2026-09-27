@@ -41,7 +41,7 @@ in
     (lib.mkIf (cfg.backend == "networkmanager") {
       networking.networkmanager.enable = true;
       networking.useDHCP = false;
-      users.users.corvidae.extraGroups = [ "networkmanager" ];
+      systemd.services.systemd-networkd-wait-online.enable = false;
     })
   ];
 }
