@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan
       ./bootloader.nix
       ./hardware-configuration.nix
+      ./syncthing.nix
       ./systemd_networkd.nix
       # Include modules for all systems
       ../../modules/core

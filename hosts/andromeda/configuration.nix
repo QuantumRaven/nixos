@@ -10,6 +10,7 @@
       ./bootloader.nix
       ./hardware-configuration.nix
       ./networkmanager.nix
+      ./syncthing.nix
       ../../modules/core
       ../../modules/desktop
       ../../modules/programs
