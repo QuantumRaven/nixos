@@ -3,6 +3,10 @@
 {
   networking.useDHCP = false;
 
+  networking.extraHosts = ''
+    127.0.0.1 odin-project.lan
+  '';
+
   systemd.network = {
     enable = true;
     networks."01-wan" = {
