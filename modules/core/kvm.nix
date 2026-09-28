@@ -11,11 +11,3 @@
   virtualisation.spiceUSBRedirection.enable = true;
   services.spice-vdagentd.enable = true;
   services.qemuGuest.enable = true;
-
-# Containerization - Podman
-  # Enable podman
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
-  };
-}
