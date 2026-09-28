@@ -9,7 +9,7 @@
 
   services.caddy = {
     enable = true;
-    virtualHosts."odin-project.local".extraConfig = ''
+    virtualHosts."http://odin-project.lan".extraConfig = ''
     reverse_proxy localhost:8000
     '';
   };
