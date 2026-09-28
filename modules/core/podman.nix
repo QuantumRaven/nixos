@@ -8,4 +8,3 @@
       dockerCompat = true;
   };
 }
-}
