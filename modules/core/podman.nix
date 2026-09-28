@@ -7,5 +7,5 @@
       enable = true;
       dockerCompat = true;
   };
-};
+}
 }
