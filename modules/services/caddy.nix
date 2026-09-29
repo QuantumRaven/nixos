@@ -16,7 +16,7 @@
     virtualHosts."career.lan".extraConfig = ''
       tls internal
     reverse_proxy localhost:8001
-    ''
+    '';
   };
 
 }
