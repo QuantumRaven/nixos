@@ -22,7 +22,6 @@
       ../../modules/desktop/kde_plasma.nix
       ../../modules/programs/obs_studio.nix
       ../../modules/programs/steam.nix
-      ../../modules/services/gitea.nix
     ];
 
   # Void-specific media config.
