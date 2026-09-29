@@ -6,18 +6,18 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
-      ./bootloader.nix
-      ./hardware-configuration.nix
-      ./networkmanager.nix
-      ./syncthing.nix
+    [ # Universal modules
       ../../modules/core
       ../../modules/desktop
       ../../modules/programs
       ../../modules/services
       ../../modules/users/corvidae
       ../../modules/impure_pkgs.nix
-      # Andromeda specific configs
+      # Andromeda specific modules
+      ./bootloader.nix
+      ./hardware-configuration.nix
+      ./networkmanager.nix
+      ./syncthing.nix
       ../../modules/desktop/niri.nix
     ];
 
