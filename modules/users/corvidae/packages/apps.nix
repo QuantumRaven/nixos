@@ -2,6 +2,7 @@
 
   with pkgs; [
     appimage-run
+    aria2c
     btop
     buku
     cockatrice
@@ -13,7 +14,6 @@
     keepassxc
     libreoffice
     lshw
-    mako
     musikcube
     novelwriter
     oklch-color-picker
