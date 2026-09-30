@@ -2,7 +2,7 @@
 
   with pkgs; [
     appimage-run
-    aria2c
+    aria2
     btop
     buku
     cockatrice
