@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       add_newline = true;
-      format = "$username$character";
+      format = "$username$hostname $character";
       username = {
         style_user = "bold purple";
         show_always = true;
@@ -14,16 +14,10 @@
         };
       hostname = {
         ssh_only = false;
-        style = "bod diamond blue";
+        style = "bold diamond blue";
         format = "@[$hostname]($style)";
         disabled = false;
         };
-      shell = {
-        bash_indicator = "bash ";
-        nu_indicator = "nushell ";
-        style = "cyan bold";
-        disabled = false;
-      };
       };
     };
 }
