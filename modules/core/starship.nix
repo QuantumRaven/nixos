@@ -5,11 +5,7 @@
     enable = true;
     settings = {
       add_newline = true;
-      format = "$character";
-      shlvl = {
-        disabled = false;
-        style = "bright-blue bold";
-      };
+      format = "$username$character";
       username = {
         style_user = "bold purple";
         show_always = true;
