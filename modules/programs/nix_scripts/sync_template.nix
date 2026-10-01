@@ -15,7 +15,7 @@ let
       export TEMPLATE_FILES="${templateFilesDir}"
 
       # Source and execute your bash script
-      source ${./scripts/sync_template.sh}
+      source ${./bash_scripts/sync_template.sh}
     '';
   };
   in
