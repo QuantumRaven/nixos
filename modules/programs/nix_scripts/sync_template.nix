@@ -6,18 +6,17 @@ let
   then "/home/corvidae/storage/corvidae/workspace/github/quantumraven/template-files"
   else "/home/corvidae/workspace/github/quantumraven/template-files";
 
-  # WriteShellApplication packages bash script and checks it with shellcheck
-  syncTemplateScript = pkgs.writeShellApplication {
-    name = "sync_template";
-    runtimeInputs = [pkgs.rsync];
-    text = ''
-      # Export the evaluated host path so the bash script can read $TEMPLATE_FILES
-      export TEMPLATE_FILES="${templateFilesDir}"
+  # WriteShellBin packages bash script and checks it with shellcheck
+  syncTemplateScript = pkgs.writeShellScriptBin "sync_template" ''
+    # Ensure rsync is available
+    export PATH="${pkgs.rsync}/bin:$PATH"
+
+    # Export the evaluated host path so the bash script can read $TEMPLATE_FILES
+    export TEMPLATE_FILES="${templateFilesDir}"
 
       # Source and execute your bash script
       source ${./bash_scripts/sync_template.sh}
     '';
-  };
   in
   {
     environment.systemPackages = [
