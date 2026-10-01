@@ -5,6 +5,7 @@
 
   networking.extraHosts = ''
     127.0.0.1 odin-project.lan
+    127.0.0.1 career.lan
   '';
 
   systemd.network = {
