@@ -10,6 +10,7 @@
     element-desktop
     gnupg
     html-tidy
+    irssi
     joplin-desktop
     keepassxc
     libreoffice
