@@ -16,6 +16,18 @@
         format = "[$user]($style)";
         style_root = "bold bright-red";
         };
+      hostname = {
+        ssh_only = false;
+        style = "bod diamond blue";
+        format = "@[$hostname]($style)";
+        disabled = false;
+        };
+      shell = {
+        bash_indicator = "bash ";
+        nu_indicator = "nushell ";
+        style = "cyan bold";
+        disabled = false;
+      };
       };
     };
 }
