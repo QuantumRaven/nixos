@@ -60,9 +60,9 @@ options=(
     "Nginx: sub_domain_template.conf"
     "Nix: AppImage Package"
     "Nix: Binary Package"
-    "Nix Tempalte: Python Dev Environment"
-    "Nix Tempalte: React/Node Dev Environment"
-    "Nix Tempalte: Rust Dev Environment"
+    "Nix Template: Python Dev Environment"
+    "Nix Template: React/Node Dev Environment"
+    "Nix Template: Rust Dev Environment"
     "Web: Whole Directory"
 )
 
