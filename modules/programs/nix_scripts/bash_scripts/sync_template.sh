@@ -60,31 +60,45 @@ actions=(
 
 # Menu fuctions
 bash_menu() {
-  rsync -avhzP "${TEMPLATE_FILES}/bash/menu_template.sh" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/bash/menu_template.sh" ./"${new_name}"
 }
 
 c_lang() {
-  rsync -avhzP "${TEMPLATE_FILES}/c/main.c" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/c/main.c" ./"${new_name}"
 }
 
 caddyfile() {
-  rsync -avhzP "${TEMPLATE_FILES}/caddy/caddyfile" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/caddy/caddyfile" ./"${new_name}"
 }
 
 nginx_server() {
-  rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_server.conf" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_server.conf" ./"${new_name}"
 }
 
 nginx_sub_domain() {
-  rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_sub_domain.conf" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_sub_domain.conf" ./"${new_name}"
 }
 
 nix_multi() {
-  rsync -avhzP "${TEMPLATE_FILES}/nix/base.nix" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/nix/base.nix" ./"${new_name}"
 }
 
 web_dir() {
-  rsync -avhzP "${TEMPLATE_FILES}/web/" .
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/web/" ."${new_name}"
 }
 
 # Main loop showing question first
