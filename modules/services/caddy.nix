@@ -17,9 +17,13 @@
       tls internal
     reverse_proxy localhost:8001
     '';
-    virtualHosts."learning.lan".extraConfig = ''
+    virtualHosts."linkwarden.lan".extraConfig = ''
       tls internal
     reverse_proxy localhost:8002
+    '';
+    virtualHosts."learning.lan".extraConfig = ''
+      tls internal
+    reverse_proxy localhost:8003
     '';
   };
 
