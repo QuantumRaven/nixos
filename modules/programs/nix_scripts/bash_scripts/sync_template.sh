@@ -33,7 +33,7 @@ fi
 SUDO_REQUIRED
 
 # Fallback if TEMPLATE_FILES isn't injected by Nix (e.g. non-NixOS hosts)
-if [[ -z "${TEMPLTE_FILES:-}" ]];
+if [[ -z "${TEMPALTE_FILES:-}" ]];
 then
   current_host="$(hostname -s 2>dev/null || hostname)"
 
@@ -60,6 +60,9 @@ options=(
     "Nginx: sub_domain_template.conf"
     "Nix: AppImage Package"
     "Nix: Binary Package"
+    "Nix Tempalte: Python Dev Environment"
+    "Nix Tempalte: React/Node Dev Environment"
+    "Nix Tempalte: Rust Dev Environment"
     "Web: Whole Directory"
 )
 
@@ -71,32 +74,54 @@ actions=(
     nginx_sub_domain
     nix_appimage_pkg
     nix_binary_pkg
+    nix_python_template
+    nix_react_template
+    nix_rust_template
     web_dir
 )
+
+# Helper function to check rsync status
+check_success() {
+    if [[ $? -eq 0 ]];
+    then
+        echo "✓ Successfully synchronized to: $1"
+    else
+        echo "✗ Error: Failed to synchronize templates." >&2
+        return 1
+    fi
+}
 
 # Menu fuctions
 bash_menu() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding Bash menu template into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/bash/menu_template.sh" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 c_lang() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding C source template into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/c/main.c" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 caddyfile() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding Caddyfile into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/caddy/caddyfile" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 nginx_server() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding Nginx server config into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_server.conf" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 nginx_sub_domain() {
@@ -105,22 +130,54 @@ nginx_sub_domain() {
     rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_sub_domain.conf" ./"${new_name}"
 }
 
+nginx_sub_domain() {
+    local new_name
+    read -rep "New file name: " new_name
+    echo "-> Scaffolding Nginx subdomain config into ./${new_name}..."
+    rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_sub_domain.conf" ./"${new_name}"
+    check_success "./${new_name}"
+}
+
 nix_appimage_pkg() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding Nix AppImage package template into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/nix/appimage_template.nix" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 nix_binary_pkg() {
     local new_name
     read -rep "New file name: " new_name
+    echo "-> Scaffolding Nix Binary package template into ./${new_name}..."
     rsync -avhzP "${TEMPLATE_FILES}/nix/binary_template.nix" ./"${new_name}"
+    check_success "./${new_name}"
+}
+
+nix_python_template() {
+    echo "-> Scaffolding Python development environment flake..."
+    rsync -avhzP "${TEMPLATE_FILES}/nix/templates/python/" ./
+    check_success "current directory (Python)"
+}
+
+nix_react_template() {
+    echo "-> Scaffolding React/Node development environment flake..."
+    rsync -avhzP "${TEMPLATE_FILES}/nix/templates/react/" ./
+    check_success "current directory (React)"
+}
+
+nix_rust_template() {
+    echo "-> Scaffolding Rust development environment flake..."
+    rsync -avhzP "${TEMPLATE_FILES}/nix/templates/rust/" ./
+    check_success "current directory (Rust)"
 }
 
 web_dir() {
     local new_name
-    read -rep "New file name: " new_name
-    rsync -avhzP "${TEMPLATE_FILES}/web_dev/" ."${new_name}"
+    read -rep "New directory/file name: " new_name
+    echo "-> Scaffolding Web development files into ./${new_name}..."
+    rsync -avhzP "${TEMPLATE_FILES}/web_dev/" ./"${new_name}"
+    check_success "./${new_name}"
 }
 
 # Main loop showing question first
