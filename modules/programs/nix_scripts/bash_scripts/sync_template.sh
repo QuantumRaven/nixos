@@ -32,9 +32,23 @@ else
 fi
 SUDO_REQUIRED
 
-# Host specific paths
-ANDROMEDA_TEMPLATE_FILES="${HOME}/workspace/github/quantumraven/template-files"
-VOID_TEMPLATE_FILES="${HOME}/storage/corvidae/workspace/github/quantumraven/template-files"
+# Fallback if TEMPLATE_FILES isn't injected by Nix (e.g. non-NixOS hosts)
+if [[ -z "${TEMPLTE_FILES:-}" ]];
+then
+  current_host="$(hostname -s 2>dev/null || hostname)"
+
+  if [[ "${current_host}" == "void" ]];
+  then
+      TEMPLATE_FILES="${HOME}/storage/corvidae/workspace/github/quantumraven/template-files"
+  elif [[ "${current_host}" == "andromeda" ]];
+  then
+      TEMPLATE_FILES="${HOME}/workspace/github/quantumraven/template-files"
+  else
+      # Generic fallback or interactive prompt for unknown/non-Nix hosts
+      echo "Notice: Unknown host '${current_host}'. Using default template path."
+      TEMPLATE_FILES="${HOME}/workspace/github/quantumraven/template-files"
+  fi
+fi
 
 # Define options and their actions together
 # Adding an option = one entry in each array, plus a function. No case branches.
@@ -44,7 +58,8 @@ options=(
     "Caddy: caddyfile"
     "Nginx: server_template.conf"
     "Nginx: sub_domain_template.conf"
-    "Nix: multi_purpose.nix"
+    "Nix: AppImage Package"
+    "Nix: Binary Package"
     "Web: Whole Directory"
 )
 
@@ -54,7 +69,8 @@ actions=(
     caddyfile
     nginx_server
     nginx_sub_domain
-    nix_multi
+    nix_appimage_pkg
+    nix_binary_pkg
     web_dir
 )
 
@@ -89,10 +105,16 @@ nginx_sub_domain() {
     rsync -avhzP "${TEMPLATE_FILES}/nginx/nginx_sub_domain.conf" ./"${new_name}"
 }
 
-nix_multi() {
+nix_appimage_pkg() {
     local new_name
     read -rep "New file name: " new_name
-    rsync -avhzP "${TEMPLATE_FILES}/nix/base.nix" ./"${new_name}"
+    rsync -avhzP "${TEMPLATE_FILES}/nix/appimage_template.nix" ./"${new_name}"
+}
+
+nix_binary_pkg() {
+    local new_name
+    read -rep "New file name: " new_name
+    rsync -avhzP "${TEMPLATE_FILES}/nix/binary_template.nix" ./"${new_name}"
 }
 
 web_dir() {
