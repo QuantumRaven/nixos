@@ -98,7 +98,7 @@ nix_multi() {
 web_dir() {
     local new_name
     read -rep "New file name: " new_name
-    rsync -avhzP "${TEMPLATE_FILES}/web/" ."${new_name}"
+    rsync -avhzP "${TEMPLATE_FILES}/web_dev/" ."${new_name}"
 }
 
 # Main loop showing question first
