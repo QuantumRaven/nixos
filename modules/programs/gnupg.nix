@@ -13,7 +13,7 @@
       enable = true;
       enableSSHSupport = true;
       enableExtraSocket = true;
-      pinetryPackage = pkgs.pinetry-curses;
+      pinetryPackage = pkgs.pinentry-curses;
       settings = {
         default-cache-ttl = 1800; # 30 min passphrase cache
         max-cache-ttl = 7200; # absolute cap of 2 hours
