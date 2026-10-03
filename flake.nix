@@ -17,14 +17,14 @@
       void = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          hjem.nixosModules.default
+          inputs.hjem.nixosModules.default
           ./hosts/void/configuration.nix
         ];
       };
       andromeda = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          hjem.nixosModules.default
+          inputs.hjem.nixosModules.default
           ./hosts/andromeda/configuration.nix
         ];
       };
