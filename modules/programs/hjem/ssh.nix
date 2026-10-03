@@ -17,7 +17,7 @@
           User git
           IdentityFile ~/.ssh/corvidae
           IdentitiesOnly yes
-      ''
+      '';
     };
   };
 }
