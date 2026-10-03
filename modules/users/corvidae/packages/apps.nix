@@ -8,7 +8,6 @@
     cockatrice
     discord
     element-desktop
-    gnupg
     html-tidy
     irssi
     joplin-desktop
@@ -23,7 +22,6 @@
     pandoc
     pavucontrol
     pciutils
-    pinentry-all
     protonplus
     protonup-qt
     reco
