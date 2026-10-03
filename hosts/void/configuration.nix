@@ -11,6 +11,7 @@
       ../../modules/core
       ../../modules/desktop
       ../../modules/programs
+      ../../modules/programs/hjem
       ../../modules/services
       ../../modules/users/corvidae
       ../../modules/impure_pkgs.nix
