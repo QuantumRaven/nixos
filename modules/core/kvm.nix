@@ -8,6 +8,7 @@
       runAsRoot = false;
       group = "libvird";
       swtpm.enable = true;
+    };
   };
 
   systemd.tmpfiles.rules = [
