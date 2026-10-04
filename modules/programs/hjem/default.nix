@@ -3,9 +3,9 @@
 {
 
   imports = [
-    ./nvim.nix
-    ./ssh.nix
-    ./starship.nix
+    ./nvim_conf.nix
+    ./ssh_conf.nix
+    ./starship_conf.nix
   ];
 
   # Enable Hjem globally for corvidae
