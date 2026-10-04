@@ -11,7 +11,6 @@
     enable32Bit = true; # Crucial for Steam, Wine, and 32-bit games
 
     extraPackages = with pkgs; [
-      amdvlk # AMD's official Vulkan driver (alternative to Mesa RADV)
       rocmPackages.clr.icd # OpenCL support for ROCm / compute workloads
       vaapiVdpau # VA-API to VDPAU translation layer
       libvdpau-va-gl # VDPAU driver with OpenGL/VA-API backend
