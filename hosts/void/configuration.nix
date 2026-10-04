@@ -18,7 +18,6 @@
       # Void-specific modules
       ../../modules/core/amd.nix
       ../../modules/core/kvm.nix
-      ../../modules/core/opengl.nix
       ../../modules/core/storage.nix
       ../../modules/desktop/kde_plasma.nix
       ../../modules/programs/obs_studio.nix
