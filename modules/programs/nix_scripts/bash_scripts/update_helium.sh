@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+: <<"AUTHOR_NOTES"
+Author: Chloe C.
+Purpose: Menu template
+AUTHOR_NOTES
+
+: <<"HANDLE_TRAPS"
+Handle trap function for error handling
+HANDLE_TRAPS
+
+set -Eeuo pipefail
+
+handle_err() {
+  local s=$?
+  echo "$0:${BASH_LINENO[0]} $BASH_COMMAND"
+  exit $s
+}
+
+trap handle_err ERR
+
+# Uncomment below if script needs to check for sudo perms before running
+# To uncomment, remove the : <<"TEXT" and TEXT
+
+: <<"SUDO_REQUIRED"
+if [[ "$EUID" = 0 ]]; then
+    echo "Already root, running..."
+else
+    printf "Must run with sudo permissions, exiting...\n"
+    sleep 2
+    exit 1
+fi
+SUDO_REQUIRED
+
+# Variables that don't change. Capitalized
+APP_DIR="${HOME}/storage/corvidae/app_images"
+RELEASE_JSON="$(curl -s "https://api.github.com/repos/imputnet/helium-linux/releases/latest")"
+TARGET="${APP_DIR}/${FILENAME}"
+
+# Extract download URL and asset filename
+DOWNLOAD_URL=$(echo "${RELEASE_JSON}" | rg "browser_download_url" | cut -d '"' -f 4 | rg "\.AppImage$" || true)
+FILENAME="$(echo "${DOWNLOAD_URL}" | awk -F'/' '{print $NF}')"
+
+if [[ -z "${DOWNLOAD_URL}" ]] || [[ -z "${FILENAME}" ]];
+then
+  echo "Error: Could not find latest Helium AppImage download URL." >&2
+  exit 1
+fi
+
+# Remove older version of helium appimages
+echo "-> Removing older Helium AppImages..."
+rm -f "${APP_DIR}"/helium-*.AppImage
+
+echo "-> Downloading new version with aria2 (multi-connection acceleration): ${FILENAME}"
+# -x16: up to 16 connections per server, -s16: split download into 16 parts
+aria2c -x16 -s16 -d "${APP_DIR}" -o "${TARGET}" "${DOWNLOAD_URL}"
+
+chmod +x "${TARGET}"
+echo "Helium successfully updated to ${TARGET}!"
