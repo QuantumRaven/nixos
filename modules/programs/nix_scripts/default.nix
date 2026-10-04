@@ -1,7 +1,7 @@
 {
   imports = [
     # Nix scripts
-    ./kdewallet.nix
+    # ./kdewallet.nix
     ./update_helium.nix
     ./sync_template.nix
   ];
