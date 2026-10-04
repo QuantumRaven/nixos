@@ -49,7 +49,7 @@
         [nodejs]
         symbol = "node "
         format = "[$symbol $version]($style)"
-      ''
+      '';
     };
   };
 }
