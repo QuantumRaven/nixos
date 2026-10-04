@@ -16,12 +16,6 @@
       libvdpau-va-gl # VDPAU driver with OpenGL/VA-API backend
     ];
 
-    # 32-bit OpenCL / Vulkan drivers
-    extraPackages32 = with pkgs; [
-      driversi686Linux.amdvlk
-    ];
-  };
-
   # Specific options for AMDGPU kernel driver management
   hardware.amdgpu = {
     initrd.enable = true; # Load amdgpu kernel module early in initrd for smoother splash/boot screen
