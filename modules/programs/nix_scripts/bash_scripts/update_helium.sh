@@ -55,6 +55,10 @@ rm -f "${APP_DIR}"/helium-*.AppImage
 echo "-> Downloading new version with aria2 (multi-connection acceleration): ${FILENAME}"
 # -x16: up to 16 connections per server, -s16: split download into 16 parts
 aria2c -x16 -s16 -d "${APP_DIR}" -o "${FILENAME}" "${DOWNLOAD_URL}"
-
 chmod +x "${TARGET}"
+
+# Create/update a stable symlink for launchers to use
+SYMLINK_PATH="${APP_DIR}/helium.AppImage"
+ln -sf "${TARGET}" "${SYMLINK_PATH}"
+
 echo "Helium successfully updated to ${TARGET}!"
