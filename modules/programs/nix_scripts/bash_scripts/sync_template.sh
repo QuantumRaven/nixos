@@ -35,7 +35,7 @@ SUDO_REQUIRED
 # Fallback if TEMPLATE_FILES isn't injected by Nix (e.g. non-NixOS hosts)
 if [[ -z "${TEMPLATE_FILES:-}" ]];
 then
-  current_host="$(hostname -s 2>dev/null || hostname)"
+  current_host="$(hostname -s 2>/dev/null || hostname)"
 
   if [[ "${current_host}" == "void" ]];
   then
