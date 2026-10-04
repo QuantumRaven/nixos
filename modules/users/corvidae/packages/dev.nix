@@ -11,6 +11,7 @@ with pkgs; [
     fd
     fuzzel
     fzf
+    gitui
     ghostty
     lazygit
     lsd
