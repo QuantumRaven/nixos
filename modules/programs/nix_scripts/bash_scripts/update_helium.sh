@@ -61,4 +61,4 @@ chmod +x "${TARGET}"
 SYMLINK_PATH="${APP_DIR}/helium.AppImage"
 ln -sf "${TARGET}" "${SYMLINK_PATH}"
 
-echo "Helium successfully updated to ${TARGET}!"
+echo "Helium successfully updated and symlinked to ${SYMLINK_PATH}!"
