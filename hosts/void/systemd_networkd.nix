@@ -6,6 +6,7 @@
   networking.extraHosts = ''
     127.0.0.1 anticheat.lan
     127.0.0.1 business.lan
+    127.0.0.1 learning.lan
     127.0.0.1 odin-project.lan
   '';
 
