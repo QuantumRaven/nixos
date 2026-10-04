@@ -7,6 +7,7 @@
     ./networking.nix
     ./openssh.nix
     ./podman.nix
+    ./starship.nix
     ./time.nix
   ];
 }
