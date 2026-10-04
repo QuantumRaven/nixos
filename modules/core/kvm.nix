@@ -5,11 +5,7 @@
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
-      runAsRoot = false;
-      verbatimConfig = ''
-        namespaces = []
-        group = "libvirtd"
-        '';
+      runAsRoot = true;
       swtpm.enable = true;
     };
   };
