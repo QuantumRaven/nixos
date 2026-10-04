@@ -6,7 +6,10 @@
     enable = true;
     qemu = {
       runAsRoot = false;
-      group = "libvirtd";
+      verbatimConfig = ''
+        namespaces = []
+        group = "libvirtd"
+        '';
       swtpm.enable = true;
     };
   };
