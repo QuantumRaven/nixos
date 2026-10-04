@@ -6,7 +6,7 @@
     enable = true;
     qemu = {
       runAsRoot = false;
-      group = "libvird";
+      group = "libvirtd";
       swtpm.enable = true;
     };
   };
@@ -19,5 +19,4 @@
   virtualisation.spiceUSBRedirection.enable = true;
   services.spice-vdagentd.enable = true;
   services.qemuGuest.enable = true;
-  };
 }
