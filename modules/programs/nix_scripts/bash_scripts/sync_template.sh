@@ -183,8 +183,8 @@ nix_rust_template() {
 
 web_dir() {
     echo "-> Scaffolding Web development environment files..."
-    rsync -avhzP "${TEMPLATE_FILES}/web_dev/" ./
-    check_success "./${new_name}"
+    rsync -avhzP "${TEMPLATE_FILES}/web_dev/" .
+    check_success "current directory (Web)"
 }
 
 # Main loop showing question first
