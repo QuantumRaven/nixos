@@ -182,10 +182,8 @@ nix_rust_template() {
 }
 
 web_dir() {
-    local new_name
-    read -rep "New directory name: " new_name
-    echo "-> Scaffolding Web development files into ./${new_name}..."
-    rsync -avhzP "${TEMPLATE_FILES}/web_dev" ./"${new_name}"
+    echo "-> Scaffolding Web development environment files..."
+    rsync -avhzP "${TEMPLATE_FILES}/web_dev" ./
     check_success "./${new_name}"
 }
 
