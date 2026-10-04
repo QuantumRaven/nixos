@@ -1,7 +1,7 @@
 {
   imports = [
     # Nix scripts
-    ./helium_updater.nix
+    ./update_helium.nix
     ./sync_template.nix
   ];
 }
