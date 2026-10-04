@@ -7,6 +7,11 @@
     qemu = {
       runAsRoot = true;
       swtpm.enable = true;
+      verbatimConfig = ''
+        namespaces = []
+        user = "corvidae"
+        group = "users"
+      '';
     };
   };
 
