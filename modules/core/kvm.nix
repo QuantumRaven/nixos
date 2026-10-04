@@ -4,9 +4,16 @@
 {
   virtualisation.libvirtd = {
     enable = true;
-    qemu.runAsRoot = false;
-    qemu.swtpm.enable = true;
+    qemu = {
+      runAsRoot = false;
+      group = "libvird";
+      swtpm.enable = true;
   };
+
+  systemd.tmpfiles.rules = [
+    "Z /home/corvidae/storage/virtualization/vdisks 2775 corvidae libvirtd -"
+  ];
+
   programs.virt-manager.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   services.spice-vdagentd.enable = true;
