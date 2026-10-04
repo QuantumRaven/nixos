@@ -53,6 +53,7 @@ fi
 # Define options and their actions together
 # Adding an option = one entry in each array, plus a function. No case branches.
 options=(
+    "Bash: base_template.sh"
     "Bash: menu_template.sh"
     "C: main.c"
     "Caddy: caddyfile"
@@ -67,6 +68,7 @@ options=(
 )
 
 actions=(
+    bash_base
     bash_menu
     c_lang
     caddyfile
@@ -92,6 +94,13 @@ check_success() {
 }
 
 # Menu fuctions
+bash_base() {
+    local new_name
+    read -rep "New file name: " new_name
+    echo "-> Scaffolding Bash base template into ./${new_name}..."
+    rsync -avhzP "${TEMPLATE_FILES}/bash/base_template.sh" ./"${new_name}"
+    check_success "./${new_name}"
+}
 bash_menu() {
     local new_name
     read -rep "New file name: " new_name
