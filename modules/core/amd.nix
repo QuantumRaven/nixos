@@ -26,6 +26,5 @@
   # Specific options for AMDGPU kernel driver management
   hardware.amdgpu = {
     initrd.enable = true; # Load amdgpu kernel module early in initrd for smoother splash/boot screen
-    amdvlk.enable = false; # Set to true if you prefer AMDVLK over Mesa RADV as the primary Vulkan driver (RADV is generally recommended for RDNA2 gaming)
   };
 }
