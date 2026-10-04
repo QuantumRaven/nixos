@@ -7,7 +7,7 @@
         Type=Application
         Name=Helium
         Comment=A secure web browser
-        Exec=/home/corvidae/storage/corvidae/app_images/helium.AppImage
+        Exec=appimage-run /home/corvidae/storage/corvidae/app_images/helium.AppImage
         Icon=web-browser
         Terminal=false
         Categories=Network;WebBrowser;
