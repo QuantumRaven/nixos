@@ -35,7 +35,6 @@ SUDO_REQUIRED
 # Variables that don't change. Capitalized
 APP_DIR="${HOME}/storage/corvidae/app_images"
 RELEASE_JSON="$(curl -s "https://api.github.com/repos/imputnet/helium-linux/releases/latest")"
-TARGET="${APP_DIR}/${FILENAME}"
 
 # Extract download URL and asset filename
 DOWNLOAD_URL=$(echo "${RELEASE_JSON}" | rg "browser_download_url" | cut -d '"' -f 4 | rg "\.AppImage$" || true)
@@ -46,6 +45,8 @@ then
   echo "Error: Could not find latest Helium AppImage download URL." >&2
   exit 1
 fi
+
+TARGET="${APP_DIR}/${FILENAME}"
 
 # Remove older version of helium appimages
 echo "-> Removing older Helium AppImages..."
