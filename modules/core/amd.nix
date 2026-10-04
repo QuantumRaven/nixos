@@ -12,7 +12,7 @@
 
     extraPackages = with pkgs; [
       rocmPackages.clr.icd # OpenCL support for ROCm / compute workloads
-      vaapiVdpau # VA-API to VDPAU translation layer
+      libva-vdpau-driver # VA-API to VDPAU translation layer
       libvdpau-va-gl # VDPAU driver with OpenGL/VA-API backend
     ];
 
