@@ -1,7 +1,7 @@
 { ... }:
 {
   hjem.users.corvidae.files = {
-    "./config/starship.toml" = {
+    ".config/starship.toml" = {
       text = ''
         "$schema" = 'https://starship.rs/config-schema.json'
 
