@@ -3,6 +3,7 @@
 {
 
   imports = [
+    ./helium_desktop.nix
     ./nvim_conf.nix
     ./ssh_conf.nix
     ./starship_conf.nix
