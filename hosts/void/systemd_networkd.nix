@@ -3,6 +3,8 @@
 {
   networking.useDHCP = false;
 
+  networking.hostName = "void";
+
   networking.extraHosts = ''
     127.0.0.1 anticheat.lan
     127.0.0.1 business.lan
