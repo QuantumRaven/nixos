@@ -7,6 +7,7 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
+        [|](bold 238)$user
         [└](bold 238) $character"""
 
         right_format = """$cmd_duration$time$nix_shell$python$nodejs$rust$golang$php"""
@@ -59,6 +60,13 @@
         time_format = "%T"
         style = "bold yellow"
         format = "[$time]($style)"
+
+        [user]
+        style_user = "white bold"
+        style_root = "red bold"
+        disabled = false
+        show_always = true
+        format = "[$user]($style)"
 
         # Programming languages
 
