@@ -7,9 +7,10 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
-        [└](bold 238) $time$character"""
+        [└](bold 238) $character"""
 
-        right_format = """$cmd_duration$time$python$nodejs$rust$golang$php"""
+        right_format = """$directory
+        $cmd_duration$time$python$nodejs$rust$golang$php"""
 
         [character]
         success_symbol = "[❯](bold green)"
