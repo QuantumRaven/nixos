@@ -8,7 +8,7 @@
         format = """
         [┌](bold 238) $directory$git_branch$git_status
         [|](bold 238) $username
-        [└](bold 238) $character$shell$shlvl"""
+        [└](bold 238) $character$shell"""
 
         right_format = """$cmd_duration$time$nix_shell$python$nodejs$rust$golang$php"""
 
@@ -60,11 +60,6 @@
         unknown_indicator = "mystery shell"
         bash_indicator = "bash "
         nu_indicator = "nu "
-
-        [shlvl]
-        disabled = false
-        threshhold = 3
-        format = "$shlvl level(s) down"
 
         [time]
         disabled = false
