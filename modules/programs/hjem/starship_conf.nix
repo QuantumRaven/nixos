@@ -17,9 +17,9 @@
         format = "[$duration](bold yellow) "
 
         [container]
-        symbole = "⬢ "
+        symbol = "⬢ "
         style = "bold red dimmed"
-        format = "[$symbol [$name]]($style)"
+        format = "[$symbol $name]]($style)"
 
         [character]
         success_symbol = "[❯](bold green)"
@@ -53,7 +53,7 @@
         renamed = "👅 "
         deleted = "🗑 "
         style = "bold 208"
-        format = "([[$all_status$ahead_behind]]($style) )"
+        format = "([$all_status$ahead_behind]($style) )"
 
         [time]
         disabled = false
@@ -66,7 +66,7 @@
         style_root = "red bold"
         disabled = false
         show_always = true
-        format = "user: [$user](style)"
+        format = "user: [$user]($style)"
 
         # Programming languages
 
