@@ -7,8 +7,8 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
-        [|](bold 238) $user
-        [└](bold 238) $character"""
+        [|](bold 238) $username
+        [└](bold 238) $character$shell"""
 
         right_format = """$cmd_duration$time$nix_shell$python$nodejs$rust$golang$php"""
 
@@ -54,6 +54,12 @@
         deleted = "🗑 "
         style = "bold 208"
         format = "([$all_status$ahead_behind]($style) )"
+
+        [shell]
+        disabled = false
+        unknown_indicator = "mystery shell"
+        bash_incdicator = "bash "
+        nu_indicator = "nu "
 
         [time]
         disabled = false
