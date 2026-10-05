@@ -59,7 +59,7 @@
         disabled = false
         unknown_indicator = "mystery shell"
         bash_indicator = "bash "
-        nu_indicator = "nu "
+        nu_indicator = "nu"
 
         [time]
         disabled = false
