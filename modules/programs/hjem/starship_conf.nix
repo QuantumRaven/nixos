@@ -66,7 +66,7 @@
         style_root = "red bold"
         disabled = false
         show_always = true
-        format = "user: [$user]($style)"
+        format = "[$user]($style)"
 
         # Programming languages
 
