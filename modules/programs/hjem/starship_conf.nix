@@ -19,7 +19,7 @@
         [container]
         symbole = "⬢ "
         style = "bold red dimmed"
-        format = "[$symbol [$name\]]($style)"
+        format = "[$symbol [$name]]($style)"
 
         [character]
         success_symbol = "[❯](bold green)"
