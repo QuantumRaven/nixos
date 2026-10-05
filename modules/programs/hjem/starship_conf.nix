@@ -7,7 +7,7 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
-        [|]$user
+        [|](bold 238) $user
         [└](bold 238) $character"""
 
         right_format = """$cmd_duration$time$nix_shell$python$nodejs$rust$golang$php"""
@@ -19,7 +19,7 @@
         [container]
         symbol = "⬢ "
         style = "bold red dimmed"
-        format = "[$symbol $name]]($style)"
+        format = "[$symbol $name]($style)"
 
         [character]
         success_symbol = "[❯](bold green)"
@@ -38,7 +38,7 @@
 
         [git_commit]
         tag_symbol = "🏷 "
-        format = "[($hash$tag)](style)"
+        format = "[($hash$tag)]($style)"
 
         [git_status]
         conflicted = "🏳 "
@@ -66,7 +66,7 @@
         style_root = "red bold"
         disabled = false
         show_always = true
-        format = "($user)($style)"
+        format = "[$user]($style)"
 
         # Programming languages
 
