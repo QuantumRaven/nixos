@@ -61,13 +61,6 @@
         style = "bold yellow"
         format = "[$time]($style)"
 
-        [user]
-        style_user = "white bold"
-        style_root = "red bold"
-        disabled = false
-        show_always = true
-        format = "[$user]($style)"
-
         # Programming languages
 
         [python]
