@@ -17,6 +17,10 @@
       tls internal
     reverse_proxy localhost:8003
     '';
+    virtualHosts."career.lan".extraConfig = ''
+      tls internal
+    reverse_proxy localhost:8005
+    '';
     virtualHosts."learning.lan".extraConfig = ''
       tls internal
     reverse_proxy localhost:8004
