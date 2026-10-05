@@ -38,7 +38,7 @@
 
         [git_commit]
         tag_symbol = "🏷 "
-        format = "[\($hash$tag\)](style)"
+        format = "[($hash$tag)](style)"
 
         [git_status]
         conflicted = "🏳 "
@@ -49,11 +49,11 @@
         untracked = "🤷 "
         stashed = "📦 "
         modified = "📝 "
-        staged = "[++\($count\)](green) "
+        staged = "[++($count)](green) "
         renamed = "👅 "
         deleted = "🗑 "
         style = "bold 208"
-        format = "([\[$all_status$ahead_behind\]]($style) )"
+        format = "([[$all_status$ahead_behind]]($style) )"
 
         [time]
         disabled = false
