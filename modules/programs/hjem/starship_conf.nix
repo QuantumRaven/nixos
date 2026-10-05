@@ -7,10 +7,19 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
+        [|]$user
         [└](bold 238) $character"""
 
-        right_format = """$directory
-        $cmd_duration$time$python$nodejs$rust$golang$php"""
+        right_format = """$cmd_duration$time$nix_shell$python$nodejs$rust$golang$php"""
+
+        [cmd_duration]
+        min_time = 500
+        format = "[$duration](bold yellow) "
+
+        [container]
+        symbole = "⬢ "
+        style = "bold red dimmed"
+        format = "[$symbol \[$name\]]($style)"
 
         [character]
         success_symbol = "[❯](bold green)"
@@ -19,25 +28,47 @@
 
         [directory]
         style = "bold blue"
-        format = "[$path]($style) "
+        home_symbol = "~"
+        format = "[$path]($style)($home_symbol) "
 
         [git_branch]
-        symbol = "△ "
+        symbol = " "
         style = "bold purple"
         format = "[$symbol$branch]($style) "
 
-        [git_status]
-        format = '([\[$all_status$ahead_behind\]]($style) )'
-        style = "bold 208"
+        [git_commit]
+        tag_symbol = "🏷 "
+        format = "[\($hash$tag\)](style)"
 
-        [cmd_duration]
-        min_time = 500
-        format = "[$duration](bold yellow) "
+        [git_status]
+        conflicted = "🏳 "
+        ahead = "🏎💨 "
+        behind = "😰 "
+        diverged = "😵 "
+        up_to_date = "✓ "
+        untracked = "🤷 "
+        stashed = "📦 "
+        modified = "📝 "
+        staged = "[++\($count\)](green) "
+        renamed = "👅 "
+        deleted = "🗑 "
+        style = "bold 208"
+        format = "([\[$all_status$ahead_behind\]]($style) )"
 
         [time]
         disabled = false
-        format = "[$time](bold 238)"
         time_format = "%T"
+        style = "bold yellow"
+        format = "[$time]($style)"
+
+        [user]
+        style_user = "white bold"
+        style_root = "red bold"
+        disabled = false
+        show_always = true
+        format = "user: [$user](style)"
+
+        # Programming languages
 
         [python]
         symbol = "py "
