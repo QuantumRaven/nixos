@@ -61,7 +61,7 @@
         style = "bold yellow"
         format = "[$time]($style)"
 
-        [user]
+        [username]
         style_user = "white bold"
         style_root = "red bold"
         disabled = false
