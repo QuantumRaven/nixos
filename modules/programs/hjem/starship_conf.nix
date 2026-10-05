@@ -7,7 +7,7 @@
 
         format = """
         [┌](bold 238) $directory$git_branch$git_status
-        [└](bold 238) $character"""
+        [└](bold 238) $character $time"""
 
         right_format = """$cmd_duration$time$python$nodejs$rust$golang$php"""
 
