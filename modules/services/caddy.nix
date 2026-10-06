@@ -11,15 +11,15 @@
     enable = true;
     virtualHosts."anticheat.lan".extraConfig = ''
       tls internal
-    reverse_proxy localhost:8001
+    reverse_proxy localhost:8000
     '';
     virtualHosts."business.lan".extraConfig = ''
       tls internal
-    reverse_proxy localhost:8003
+    reverse_proxy localhost:8001
     '';
     virtualHosts."career.lan".extraConfig = ''
       tls internal
-    reverse_proxy localhost:8005
+    reverse_proxy localhost:8003
     '';
     virtualHosts."learning.lan".extraConfig = ''
       tls internal
@@ -27,7 +27,7 @@
     '';
     virtualHosts."odin-project.lan".extraConfig = ''
       tls internal
-    reverse_proxy localhost:8000
+    reverse_proxy localhost:8005
     '';
 
   };
