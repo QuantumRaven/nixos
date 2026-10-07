@@ -8,6 +8,7 @@
     cockatrice
     discord
     element-desktop
+    homebank
     html-tidy
     irssi
     joplin-desktop
