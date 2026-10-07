@@ -30,6 +30,7 @@
     texliveFull
     texmaker
     unzip
+    virt-viewer
     wget2
     wl-clipboard-rs
     zeal
