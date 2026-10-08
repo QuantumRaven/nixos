@@ -51,9 +51,9 @@
         #############
         # Verta Host
         #############
-        Host corvidae.vertahost.com
+        Host root.vertahost.com
           HostName 163.245.198.131
-          User root
+          User corvidae
           IdentityFile ~/.ssh/corvidae
           IdentitiesOnly yes
       '';
