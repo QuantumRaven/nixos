@@ -5,4 +5,5 @@ with pkgs; [
     firefox
     google-chrome
     librewolf
+    nyxt
   ]
